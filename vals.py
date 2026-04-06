@@ -1,0 +1,106 @@
+
+import numpy as np
+from astropy.cosmology import Planck18
+from astropy.coordinates import SkyCoord
+import extinction
+#from dustmaps.sfd import SFDQuery
+#from dustmaps.planck import PlanckQuery
+#from dustmaps.config import config
+#config['data_dir'] = '../../data/sfddata-master/'
+
+# Important values
+ra = 50.04530417
+dec = 8.74881639
+t0 = 2459829.9731713 # first ZTF detection (from IPAC forced phot)
+last_nondet = 2459826.9464 # last ZTF non-detection
+t_flare_onset = 2459856.9 # onset of flaring
+z = 0.2564 # redshift
+#).value
+dL_cm = Planck18.luminosity_distance(z=z).cgs.value
+dA_cm = Planck18.angular_diameter_distance(z=z).cgs.value
+dL_mpc = Planck18.luminosity_distance(z=z).value
+# I got these colors from https://www.visualisingdata.com/2019/08/five-ways-to-design-for-red-green-colour-blindness/
+rc = '#DB4325'
+gc = '#57C4AD'
+ic = '#EDA247'
+uc = '#E6E1BC'
+wc = 'grey'
+oc = '#006164' # ATLAS o-band
+# Viridis colors. I got these from https://waldyrious.net/viridis-palette-generator/
+fbot_col = '#29A74F' # green
+lgrb_col = '#ffa7b6'
+tde_col = '#de6aaf'
+llgrb_col = '#9279ba'
+sn_col = '#7C7C7C'  # grey
+
+
+# Get extinction
+def get_extinction(wave):
+    # wavelength in AA
+    coords = SkyCoord(ra,dec,unit='deg')
+    sfd = SFDQuery()
+    ebv = sfd(coords)
+    a_v = ebv*2.742 # conversion for V-band (Schlafly & Finkbeiner 2011)
+    ext = extinction.fitzpatrick99(np.array([wave]),a_v,r_v=3.1,unit='aa')
+    return ext[0]
+
+ext = {}
+ext['u'] = 1.162 # Schlafly & Finkbeiner (2011)
+ext['g'] = 0.906 # Schlafly & Finkbeiner (2011)
+ext['r'] = 0.627 # Schlafly & Finkbeiner (2011)
+ext['R'] = 0.627 # Schlafly & Finkbeiner (2011) # Should double check this
+ext['i'] = 0.466 # Schlafly & Finkbeiner (2011)
+ext['clear'] = 0.466 # use the i-band value, close to the peak of the efficiency curve
+
+# Generic values
+leff = {}
+leff['u'] = 3450
+leff['g'] = 4750 
+leff['r'] = 6200
+leff['i'] = 7600
+leff['clear'] = 8500
+leff['w'] = 6080
+
+# Facility-specific values
+ztf_pivot = {}
+ztf_pivot['g'] = 4758.76
+ztf_pivot['r'] = 6389.72
+ztf_pivot['i'] = 7927.51
+ztf_leff = {}
+ztf_leff['g'] = 4746.48
+ztf_leff['r'] = 6366.38
+ztf_leff['i'] = 7829.03
+sdss_pivot = {}
+sdss_pivot['g'] = 4702.50
+sdss_pivot['r'] = 6175.58
+sdss_pivot['i'] = 7489.98
+keck_leff = {}
+keck_leff['u'] = 3450.0
+keck_leff['g'] = 4706.0
+keck_leff['i'] = 7599.0
+ps1_leff = {}
+ps1_leff['i'] = 7520.0
+ps1_leff['w'] = 6080.0
+ps1_leff['z'] = 8660.0
+atlas_leff = {}
+atlas_leff['o'] = 6629.82
+
+# New vals for Jason paper
+#t0={'AT2023fhn': 60044.204, 'AT2023vth': 60235.116, 'AT2023hkw': 60064.172824100100,
+#    'AT2022abfc': 59904.344, 'AT2021ahuo': 59352.4248, 'AT2018cow': 58285.44141, 'AT2022tsd': 59829.47317130,
+#    'AT2024aehp': 60662.35732640, 'AT2024qfm': 60515.44636569, 'CSS161010': 57671.48, 'AT2024wpp': 60578.4} # First Discovery
+t0={'AT2023fhn': 60046.224062500100, 'AT2023vth': 60237.13100690020, 'AT2023hkw': 60064.172824100100,
+    'AT2022abfc': 59904.34430560000, 'AT2021ahuo': 59352.4248, 'AT2018cow': 58287.1500, 'AT2022tsd': 59829.47317130,
+    'AT2024aehp': 60663.41862270000, 'AT2024qfm': 60518.3463657} # Peak Magnitude
+objects = ['AT2022abfc','AT2023fhn', 'AT2023hkw', 'AT2023vth', 'AT2024qfm', 'AT2024aehp']
+colors={'AT2022abfc': 'blue','AT2023fhn':'#daa520', 'AT2023hkw':'brown', 'AT2023vth':'purple', 'AT2024qfm': '#013220', 'AT2024aehp':'#F100D1'}
+markers={'AT2022abfc': 'o','AT2023fhn':'p', 'AT2023hkw':'s', 'AT2023vth':'D', 'AT2024qfm':'X', 'AT2024aehp': 'P'}
+
+redshifts={'AT2021ahuo': 0.342, 'AT2022abfc':0.212,
+               'AT2023fhn': 0.24, 'AT2023hkw': 0.339,
+               'AT2023vth': 0.0747, 'AT2018cow': 0.0141,
+               'AT2024qfm': 0.227, 'AT2024aehp': 0.1715,
+              'AT2024wpp':0.0868, 'AT2020xnd': 0.2433,
+              'CSS161010': 0.033}
+b_v={'AT2022abfc': 0.0298, 'AT2023hkw': 0.0111, 'AT2023fhn': 0.0254, 'AT2023vth': 0.1801,'AT2024qfm':0.0421, 'AT2024wpp':0.0245, 'AT2024aehp':0.0245,
+     'AT2018cow':0.0759}

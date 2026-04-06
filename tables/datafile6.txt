@@ -1,0 +1,124 @@
+Title: Multiwavelength Analysis of Six Luminous, Fast Blue Optical Transients
+Authors: Sevilla, Cassie et al.
+Table: Radio and Millimeter Observations
+================================================================================
+Byte-by-byte Description of file: datafile6.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units  Label          Explanations
+--------------------------------------------------------------------------------
+   1- 10 A10    ---      Object         Name of the LFBOT observed
+  12- 19 I8     ---      Date           UTC Date when observation was taken
+  21- 23 I3     d        t-rest         Rest-frame days after t0 observation was taken
+  25- 27 A3     ---      Band           Frequency Band of Observation
+  29- 34 F6.2   10+9Hz   Frequency      Median Frequency of Observation
+  36- 48 A13    ---      Configuration  Configuration of the Array that took the Observation
+  50- 61 A12    1-6Jy    Flux-Density   Measured Flux Density
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+AT2022abfc 20221206  15 X    10.00 VLA-C         $<13$        
+AT2022abfc 20221206  15 X     9.00 VLA-C         $<17$        
+AT2022abfc 20221206  15 X    11.00 VLA-C         $<19$        
+AT2022abfc 20221223  32 Ku   10.00 VLA-C         $52\pm3$     
+AT2022abfc 20221223  32 X    10.00 VLA-C         $38\pm4$     
+AT2022abfc 20230110  53 1    86.00 NOEMA-12A     $<348$       
+AT2022abfc 20230405 135 Ku   10.00 VLA-B         $45\pm7$     
+AT2022abfc 20230405 135 X    10.00 VLA-B         $43\pm9$     
+AT2022abfc 20230602 192 3     0.45 GMRT          $<150 $      
+AT2022abfc 20230622 214 5     1.37 GMRT          44$\pm$12    
+AT2022abfc 20230623 215 3     0.45 GMRT          $<165$       
+AT2022abfc 20230624 216 Ku   10.00 VLA-BnA$->$A  $<27$        
+AT2022abfc 20230624 216 S     3.00 VLA-BnA$->$A  $<26$        
+AT2022abfc 20230624 216 X    10.00 VLA-BnA$->$A  $<26$        
+AT2022abfc 20240202 438 X    10.00 VLA-C         $<12$        
+AT2022abfc 20240202 438 X     9.00 VLA-C         $<17$        
+AT2022abfc 20240202 438 X    11.00 VLA-C         $<19$        
+AT2023fhn  20230422  10 1    86.00 NOEMA-C       $<90$        
+AT2023fhn  20230511  29 X     9.00 VLA-B         $<19$        
+AT2023fhn  20230511  29 X    11.00 VLA-B         $<20$        
+AT2023fhn  20230615  64 X     9.00 VLA-BnA       $43\pm6$     
+AT2023fhn  20230615  64 X    11.00 VLA-BnA       $53\pm7$     
+AT2023fhn  20230709  88 Ku   10.00 VLA-A         $75\pm7$     
+AT2023fhn  20230709  88 X    10.00 VLA-A         $118\pm6$    
+AT2023fhn  20230825 135 Ku   10.00 VLA-A         $98\pm9$     
+AT2023fhn  20230825 135 X    10.00 VLA-A         $143\pm7$    
+AT2023fhn  20230910 151 4     0.65 GMRT          $<300$       
+AT2023fhn  20230910 151 5     1.37 GMRT          $<180$       
+AT2023fhn  20231026 197 5     1.37 GMRT          $85\pm24$    
+AT2023fhn  20231103 205 4     0.65 GMRT          $<231$       
+AT2023fhn  20231127 229 4     0.65 GMRT          $<210$       
+AT2023fhn  20231127 229 5     1.37 GMRT          $112\pm20$   
+AT2023fhn  20240624 440 X    10.00 VLA-B         $33\pm5$     
+%AT2023hkw 20230614  44 X    10.00 VLA-BnA       $77\pm6$     
+AT2023hkw  20230614  44 X     9.00 VLA-BnA       $79\pm6$     
+AT2023hkw  20230614  44 X    11.00 VLA-BnA       $103\pm7$    
+AT2023hkw  20230704  64 Ka   33.00 VLA-A         $124\pm11$   
+AT2023hkw  20230704  64 Ku   10.00 VLA-A         $152\pm7$    
+AT2023hkw  20230826 117 C     6.00 VLA-A         $74\pm7$     
+AT2023hkw  20230826 117 X    10.00 VLA-A         $85\pm8$     
+AT2023hkw  20230826 117 Ku   10.00 VLA-A         $56\pm9$     
+AT2023hkw  20230831 122 4     0.65 GMRT          $<100$       
+AT2023hkw  20230831 122 5     1.37 GMRT          $<100$       
+AT2023hkw  20230902 124 3     0.45 GMRT          $<210$       
+AT2023hkw  20231028 180 5     1.37 GMRT          $<270$       
+AT2023hkw  20231102 185 4     0.65 GMRT          $<780$       
+AT2023hkw  20231103 186 3     0.45 GMRT          $<570$       
+AT2023hkw  20231127 210 4     0.65 GMRT          $<360$       
+AT2023hkw  20231127 210 5     1.37 GMRT          $<120$       
+AT2023vth  20231117  28 X     9.00 VLA-D         $150\pm8$    
+AT2023vth  20231117  28 X    11.00 VLA-D         $148\pm7$    
+AT2023vth  20231120  31 1    86.00 NOEMA-C       $358\pm48$   
+AT2023vth  20231120  31 1   102.00 NOEMA-C       $350\pm56$   
+AT2023vth  20231123  34 2   136.00 NOEMA-C       $264\pm38$   
+AT2023vth  20231123  34 2   152.00 NOEMA-C       $241\pm46$   
+AT2023vth  20231128  39 C     6.00 VLA-D         $259\pm10$   
+AT2023vth  20231128  39 Ka   33.00 VLA-D         $368\pm10$   
+AT2023vth  20231128  39 Ku   10.00 VLA-D         $473\pm5$    
+AT2023vth  20231128  39 X    10.00 VLA-D         $399\pm7$    
+AT2023vth  20231203  44 1    86.00 NOEMA-10an    $395\pm40$   
+AT2023vth  20231203  44 1   102.00 NOEMA-10an    $349\pm42$   
+AT2023vth  20231203  44 2   102.00 NOEMA-10an    $294\pm41$   
+AT2023vth  20231203  44 2   151.74 NOEMA-10an    $241\pm45$   
+AT2023vth  20231216  57 4     0.65 GMRT          $< 297$      
+AT2023vth  20231216  57 5     1.37 GMRT          $72 \pm 24$  
+AT2023vth  20231228  69 1    86.00 NOEMA-C       $359\pm34$   
+AT2023vth  20231228  69 1   102.00 NOEMA-C       $257\pm38$   
+AT2023vth  20231228  69 2   102.00 NOEMA-C       $226\pm24$   
+AT2023vth  20231228  69 2   151.74 NOEMA-C       $147\pm28$   
+AT2023vth  20240111  83 3   216.00 NOEMA-12C ant N/A          
+AT2023vth  20240111  83 3   232.00 NOEMA-12C ant N/A          
+AT2023vth  20240113  85 C     6.00 VLA-D         $989\pm9$    
+AT2023vth  20240113  85 Ka   33.00 VLA-D         $571\pm10$   
+AT2023vth  20240113  85 Ku   10.00 VLA-D         $1290\pm6$   
+AT2023vth  20240113  85 X    10.00 VLA-D         $1290\pm 6$  
+AT2023vth  20240113  85 3   216.00 NOEMA-12C ant $75\pm26$    
+AT2023vth  20240113  85 3   232.00 NOEMA-12C ant $95\pm30$    
+AT2023vth  20240120  92 4     0.65 GMRT          $<420$       
+AT2023vth  20240122  94 5     1.37 GMRT          $109\pm20$   
+AT2023vth  20240130 102 1    86.00 NOEMA         $249\pm21$   
+AT2023vth  20240130 102 1   102.00 NOEMA         $215\pm21$   
+AT2023vth  20240213 116 C     6.00 VLA-C         $903\pm9$    
+AT2023vth  20240213 116 Ka   33.00 VLA-C         $295\pm9$    
+AT2023vth  20240213 116 Ku   10.00 VLA-C         $562\pm10$   
+AT2023vth  20240213 116 X    10.00 VLA-C         $769\pm9$    
+AT2023vth  20240222 125 4     0.65 GMRT          $< 450$      
+AT2023vth  20240224 127 5     1.37 GMRT          $190\pm24$   
+AT2023vth  20240509 202 C     6.00 VLA-B         $79\pm10$    
+AT2023vth  20240509 202 Ka   33.00 VLA-B         $<36$        
+AT2023vth  20240509 202 Ku   10.00 VLA-B         $46\pm10$    
+AT2023vth  20240509 202 X    10.00 VLA-B         $56\pm11$    
+AT2024qfm  20240802   6 X    10.00 VLA-A         $<15$        
+AT2024qfm  20240805   9 1    94.00 NOEMA         $88\pm22$    
+AT2024qfm  20240812  16 1    94.00 NOEMA         $147\pm33$   
+AT2024qfm  20240826  30 1    94.00 NOEMA         $117\pm21$   
+AT2024qfm  20240920  55 1    94.00 NOEMA         $<60$        
+AT2024aehp 20241227   8 X    10.00 VLA-A         $<12$        
+AT2024aehp 20250311  82 X    10.00 VLA-D         $26\pm8$     
+AT2024aehp 20250315  86 C     6.00 VLA-D         $31\pm9$     
+AT2024aehp 20250315  86 X    10.00 VLA-D         $36\pm5$     
+AT2024aehp 20250315  86 Ku   15.00 VLA-D         $75\pm6$     
+AT2024aehp 20250509 141 C     6.00 VLA-D         $161\pm7$    
+AT2024aehp 20250509 141 X    10.00 VLA-D         $321\pm4$    
+AT2024aehp 20250509 141 Ku   15.00 VLA-D         $455\pm6$    
+AT2024aehp 20250517 149 ---  15.50 AMI           $639$        
+AT2024aehp 20250523 155 1    86.00 NOEMA         $191\pm25$   
+AT2024aehp 20250523 155 1   102.00 NOEMA         $175\pm28$   

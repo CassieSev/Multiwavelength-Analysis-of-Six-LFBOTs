@@ -1,0 +1,269 @@
+30-Mar-93 &   2.90 & Camb    & nodata               & nodata               & nodata               & $<   0.6$           & nodata               
+31-Mar-93 &   3.10 & VLA-B   & nodata               & nodata               & $<   0.090$           & nodata               & nodata               
+31-Mar-93 &   3.10 & VLA-B   & $<   0.180$           & nodata               & nodata               & nodata               & nodata               
+01-Apr-93 &   4.91 & Camb    & nodata               & nodata               & nodata               & $<   2.4$           & nodata               
+02-Apr-93 &   5.29 & VLA-B   & nodata               & nodata               & nodata               & $<   0.348$           & nodata               
+02-Apr-93 &   5.30 & VLA-B   & nodata               & nodata               & $<   0.120$           & nodata               & nodata               
+02-Apr-93 &   5.34 & VLA-B   & nodata               & nodata               & nodata               & nodata               & $   0.740pm    0.195$
+02-Apr-93 &   5.77 & Camb    & nodata               & nodata               & nodata               & $<   0.3$           & nodata               
+03-Apr-93 &   6.91 & Camb    & nodata               & nodata               & nodata               & $<   0.6$           & nodata               
+04-Apr-93 &   7.72 & Camb    & nodata               & nodata               & nodata               & $   1.1pm    0.11$& nodata               
+05-Apr-93 &   8.83 & Camb    & nodata               & nodata               & nodata               & $   3.8pm    0.38$& nodata               
+06-Apr-93 &   9.88 & Camb    & nodata               & nodata               & nodata               & $   5.0pm    0.5$& nodata               
+07-Apr-93 &  10.68 & Camb    & nodata               & nodata               & nodata               & $   5.8pm    0.58$& nodata               
+07-Apr-93 &  10.81 & Camb    & nodata               & nodata               & nodata               & $   6.4pm    0.64$& nodata               
+07-Apr-93 &  10.93 & Camb    & nodata               & nodata               & nodata               & $   6.9pm    0.69$& nodata               
+08-Apr-93 &  11.08 & Camb    & nodata               & nodata               & nodata               & $   7.9pm    0.79$& nodata               
+08-Apr-93 &  11.37 & VLA-B   & nodata               & nodata               & $   0.750pm    0.063$& $   8.040pm    0.629$& $  18.940pm    1.905$
+08-Apr-93 &  11.69 & Camb    & nodata               & nodata               & nodata               & $   8.0pm    0.8$& nodata               
+09-Apr-93 &  12.08 & Camb    & nodata               & nodata               & nodata               & $   8.7pm    0.87$& nodata               
+09-Apr-93 &  12.33 & VLA-B   & nodata               & nodata               & nodata               & $  10.569pm    0.828$& $  22.487pm    2.261$
+09-Apr-93 &  12.99 & Camb    & nodata               & nodata               & nodata               & $  11.1pm    1.11$& nodata               
+10-Apr-93 &  13.04 & VLA-B   & nodata               & nodata               & $   1.330pm    0.097$& nodata               & $  25.753pm    2.576$
+10-Apr-93 &  13.46 & VLA-B   & nodata               & nodata               & nodata               & $  11.586pm    0.934$& $  25.550pm    2.578$
+10-Apr-93 &  13.73 & Camb    & nodata               & nodata               & nodata               & $  11.1pm    1.11$& nodata               
+11-Apr-93 &  14.25 & VLA-B   & $<   0.180$           & nodata               & $   1.890pm    0.107$& $  14.610pm    1.122$& $  28.640pm    2.875$
+11-Apr-93 &  14.88 & Camb    & nodata               & nodata               & nodata               & $  12.4pm    1.24$& nodata               
+12-Apr-93 &  15.73 & Camb    & nodata               & nodata               & nodata               & $  16.0pm    1.60$& nodata               
+13-Apr-93 &  16.02 & VLA-B   & nodata               & nodata               & $   2.980pm    0.169$& nodata               & $  31.600pm    5.336$
+13-Apr-93 &  16.53 & VLA-B   & nodata               & $   0.327pm    0.080$& $   3.140pm    0.172$& $  17.680pm    1.428$& $  33.200pm    3.491$
+13-Apr-93 &  16.85 & Camb    & nodata               & nodata               & nodata               & $  16.4pm    1.64$& nodata               
+14-Apr-93 &  17.07 & VLA-B   & nodata               & $   0.280pm    0.052$& $   3.590pm    0.189$& $  20.140pm    1.525$& $  35.250pm    3.540$
+14-Apr-93 &  17.65 & Camb    & nodata               & nodata               & nodata               & $  19.4pm    1.94$& nodata               
+16-Apr-93 &  19.02 & VLA-B   & nodata               & $   0.360pm    0.063$& nodata               & nodata               & $  39.860pm    4.078$
+16-Apr-93 &  19.06 & Camb    & nodata               & nodata               & nodata               & $  24.1pm    2.41$& nodata               
+17-Apr-93 &  20.07 & Camb    & nodata               & nodata               & nodata               & $  26.0pm    2.60$& nodata               
+18-Apr-93 &  21.73 & Camb    & nodata               & nodata               & nodata               & $  29.3pm    2.93$& nodata               
+19-Apr-93 &  22.25 & VLA-B   & nodata               & $   0.880pm    0.074$& $   7.860pm    0.396$& $  31.440pm    2.372$& $  39.140pm    3.933$
+19-Apr-93 &  22.62 & Camb    & nodata               & nodata               & nodata               & $  31.6pm    3.16$& nodata               
+19-Apr-93 &  22.97 & VLA-B   & nodata               & $   0.870pm    0.066$& $   8.990pm    0.453$& $  34.910pm    2.638$& nodata               
+20-Apr-93 &  23.83 & Camb    & nodata               & nodata               & nodata               & $  35.8pm    3.58$& nodata               
+21-Apr-93 &  24.51 & VLA-B   & nodata               & $   1.290pm    0.095$& $   9.710pm    0.491$& $  34.770pm    2.631$& $  38.420pm    3.892$
+21-Apr-93 &  24.78 & Camb    & nodata               & nodata               & nodata               & $  36.1pm    3.61$& nodata               
+22-Apr-93 &  25.48 & VLA-B   & nodata               & $   1.700pm    0.110$& $  11.770pm    0.592$& $  37.350pm    2.822$& $  39.940pm    4.029$
+23-Apr-93 &  26.67 & Camb    & nodata               & nodata               & nodata               & $  39.7pm    3.97$& nodata               
+23-Apr-93 &  26.88 & VLA-B   & $<   0.330$           & $   1.930pm    0.113$& $  14.610pm    0.735$& $  37.920pm    2.865$& $  40.020pm    4.150$
+24-Apr-93 &  27.71 & Camb    & nodata               & nodata               & nodata               & $  42.2pm    4.22$& nodata               
+24-Apr-93 &  27.87 & VLA-B   & nodata               & $   2.050pm    0.130$& $  15.170pm    0.763$& nodata               & $  48.810pm    5.062$
+25-Apr-93 &  28.71 & Camb    & nodata               & nodata               & nodata               & $  46.0pm    4.60$& nodata               
+25-Apr-93 &  28.99 & VLA-B   & nodata               & $   2.640pm    0.149$& $  16.710pm    0.839$& nodata               & $  45.450pm    4.626$
+26-Apr-93 &  29.70 & Camb    & nodata               & nodata               & nodata               & $  46.0pm    4.60$& nodata               
+26-Apr-93 &  29.85 & VLA-B   & nodata               & $   3.260pm    0.182$& $  18.580pm    0.932$& $  47.200pm    3.594$& nodata               
+27-Apr-93 &  30.84 & VLA-B   & nodata               & $   3.180pm    0.178$& $  19.730pm    0.991$& nodata               & $  51.260pm    5.272$
+28-Apr-93 &  31.05 & Camb    & nodata               & nodata               & nodata               & $  49.8pm    4.98$& nodata               
+28-Apr-93 &  31.52 & VLA-B   & nodata               & $   3.630pm    0.195$& $  20.550pm    1.031$& $  51.450pm    3.883$& $  55.380pm    5.598$
+28-Apr-93 &  31.63 & Camb    & nodata               & nodata               & nodata               & $  50.4pm    5.04$& nodata               
+29-Apr-93 &  32.50 & VLA-B   & nodata               & $   4.110pm    0.238$& $  21.930pm    1.103$& nodata               & $  45.010pm    4.528$
+29-Apr-93 &  32.61 & Camb    & nodata               & nodata               & nodata               & $  48.1pm    4.81$& nodata               
+30-Apr-93 &  33.71 & Camb    & nodata               & nodata               & nodata               & $  56.6pm    5.66$& nodata               
+01-May-93 &  34.37 & VLA-B   & nodata               & $   5.820pm    0.299$& $  26.000pm    1.302$& nodata               & $  55.780pm    5.639$
+01-May-93 &  34.93 & VLA-B   & $<   0.660$           & $   6.290pm    0.327$& $  29.630pm    1.484$& $  61.090pm    4.585$& $  52.810pm    5.288$
+02-May-93 &  35.63 & Camb    & nodata               & nodata               & nodata               & $  60.4pm    6.04$& nodata               
+02-May-93 &  35.71 & VLA-B   & nodata               & $   6.000pm    0.310$& $  30.310pm    1.518$& $  55.950pm    4.205$& nodata               
+03-May-93 &  36.66 & Camb    & nodata               & nodata               & nodata               & $  60.4pm    6.04$& nodata               
+04-May-93 &  37.27 & VLA-B   &  nodata & $   8.060pm    0.406$& $  33.320pm    1.668$      & $  67.320pm    5.066$& $  62.900pm    6.327$
+04-May-93 &  37.78 & Camb    & nodata               & nodata               & nodata               & $  65.4pm    6.54$& nodata               
+05-May-93 &  38.79 & Camb    & nodata               & nodata               & nodata               & $  63.1pm    6.31$& nodata               
+06-May-93 &  39.79 & Camb    & nodata               & nodata               & nodata               & $  65.7pm    6.57$& nodata               
+07-May-93 &  40.11 & VLA-B   & nodata               & $  10.510pm    0.529$& $  37.070pm    1.854$& $  67.440pm    5.074$& $  53.640pm    5.396$
+07-May-93 &  40.79 & Camb    & nodata               & nodata               & nodata               & $  65.7pm    6.57$& nodata               
+09-May-93 &  42.78 & Camb    & nodata               & nodata               & nodata               & $  64.0pm    6.40$& nodata               
+11-May-93 &  44.74 & VLA-B/C & nodata               & $  15.550pm    0.785$& $  52.100pm    2.611$& $  69.900pm    5.249$& $  46.700pm    4.691$
+12-May-93 &  45.71 & Camb    & nodata               & nodata               & nodata               & $  70.4pm    7.04$& nodata               
+13-May-93 &  46.74 & Camb    & nodata               & nodata               & nodata               & $  70.9pm    7.09$& nodata               
+14-May-93 &  47.20 & VLA-B/C & nodata               & $  18.170pm    0.915$& $  59.030pm    2.960$& $  77.150pm    5.805$& $  61.070pm    6.169$
+14-May-93 &  47.73 & Camb    & nodata               & nodata               & nodata               & $  73.5pm    7.35$& nodata               
+16-May-93 &  49.70 & Camb    & nodata               & nodata               & nodata               & $  71.0pm    7.10$& nodata               
+16-May-93 &  49.86 & VLA-B/C & $<   1.903$           & $  22.100pm    1.110$& nodata               & nodata               & nodata               
+17-May-93 &  50.00 & VLAtablenotemark{c}& nodata & nodata & $63.0pm 3.2$ &nodata & nodata 
+17-May-93 &  50.13 & VLA-B/C & nodata               & nodata               & $  61.910pm    3.099$& $  74.400pm    5.582$& $  54.610pm    5.470$
+17-May-93 &  50.69 & Camb    & nodata               & nodata               & nodata               & $  70.2pm    7.02$& nodata               
+19-May-93 &  52.76 & Camb    & nodata               & nodata               & nodata               & $  71.4pm    7.14$& nodata               
+20-May-93 &  53.17 & VLA-B/C & $<   1.045$           & $  25.819pm    1.298$& $  63.900pm    3.201$& $  72.698pm    5.474$& $  54.749pm    5.502$
+21-May-93 &  54.68 & Camb    & nodata               & nodata               & nodata               & $  72.0pm    7.20$& nodata               
+22-May-93 &  55.65 & Camb    & nodata               & nodata               & nodata               & $  72.6pm    7.26$& nodata               
+23-May-93 &  56.65 & Camb    & nodata               & nodata               & nodata               & $  73.7pm    7.37$& nodata               
+24-May-93 &  57.68 & Camb    & nodata               & nodata               & nodata               & $  76.7pm    7.67$& nodata               
+25-May-93 &  58.67 & Camb    & nodata               & nodata               & nodata               & $  71.2pm    7.12$& nodata               
+25-May-93 &  58.99 & VLA-B/C & $<   0.613$           & $  34.560pm    1.734$& $  77.920pm    3.898$& $  79.480pm    5.979$& $  67.480pm    6.810$
+26-May-93 &  59.66 & Camb    & nodata               & nodata               & nodata               & $  74.1pm    7.41$& nodata               
+30-May-93 &  63.04 & VLA-B/C & nodata               & $  40.000pm    2.007$& $  81.500pm    4.080$& $  76.2pm    5.726$& $  53.000pm    5.342$
+01-Jun-93 &  65.72 & Camb    & nodata               & nodata               & nodata               & $  77.2pm    7.72$& nodata               
+02-Jun-93 &  66.62 & Camb    & nodata               & nodata               & nodata               & $  77.9pm    7.79$& nodata               
+03-Jun-93 &  67.57 & Camb    & nodata               & nodata               & nodata               & $  75.9pm    7.59$& nodata               
+04-Jun-93 &  68.06 & VLA-B/C & $<   1.035$           & $  43.970pm    2.220$& nodata               & $  65.593pm    4.960$& $  47.200pm    4.759$
+06-Jun-93 &  70.71 & Camb    & nodata               & nodata               & nodata               & $  76.9pm    7.69$& nodata               
+07-Jun-93 &  71.85 & Camb    & nodata               & nodata               & nodata               & $  76.4pm    7.64$& nodata               
+09-Jun-93 &  73.71 & Camb    & nodata               & nodata               & nodata               & $  78.2pm    7.82$& nodata               
+10-Jun-93 &  74.70 & Camb    & nodata               & nodata               & nodata               & $  78.0pm    7.80$& nodata               
+11-Jun-93 &  75.06 & VLA-C   & $   0.650pm    0.103$& $  56.330pm    2.820$& $  90.740pm    4.538$& $  77.270pm    5.808$& $  51.140pm    5.157$
+13-Jun-93 &  77.69 & Camb    & nodata               & nodata               & nodata               & $  72.9pm    7.29$& nodata               
+18-Jun-93 &  82.92 & VLA-C   & $   1.220pm    0.141$& $  70.740pm    3.572$& $108.980pm 5.472 $ & $  74.920pm    5.641$& nodata               
+20-Jun-93 &  84.59 & Camb    & nodata               & nodata               & nodata               & $  67.9pm    6.79$& nodata               
+21-Jun-93 &  85.57 & Camb    & nodata               & nodata               & nodata               & $  70.9pm    7.09$& nodata               
+22-Jun-93 &  86.60 & Camb    & nodata               & nodata               & nodata               & $  71.3pm    7.13$& nodata               
+23-Jun-93 &  87.46 & Camb    & nodata               & nodata               & nodata               & $  72.0pm    7.20$& nodata               
+24-Jun-93 &  88.77 & Camb    & nodata               & nodata               & nodata               & $  72.2pm    7.22$& nodata               
+25-Jun-93 &  89.75 & VLA-C   & $   2.850pm    0.314$& $  79.780pm    4.018$& $ 101.370pm    5.094$& $  75.860pm    5.695$& $  51.820pm    5.212$
+01-Jul-93 &  95.22 & VLA-C   & $   2.940pm    0.330$& $  87.200pm    4.379$& $ 102.730pm    5.138$& $  73.660pm    5.539$& $  44.850pm    4.552$
+01-Jul-93 &  95.64 & Camb    & nodata               & nodata               & nodata               & $  75.0pm    7.50$& nodata               
+07-Jul-93 & 101.82 & Camb    & nodata               & nodata               & nodata               & $  69.1pm    6.91$& nodata               
+08-Jul-93 & 102.66 & Camb    & nodata               & nodata               & nodata               & $  70.0pm    7.00$& nodata               
+08-Jul-93 & 102.76 & VLA-C   & $   4.090pm    0.436$& $ 102.670pm5.142$& $ 129.360pm    6.472$& nodata & nodata               
+13-Jul-93 & 107.77 & VLA-C   & $   6.840pm    0.694$& $ 111.420pm    5.583$& $ 134.220pm    6.716$& $  89.190pm    6.718$& nodata          
+19-Jul-93 & 113.02 & VLA-C   & $   6.520pm    0.657$& $ 104.370pm    5.223$& $ 108.630pm    5.434$& $  72.960pm    5.488$& $  47.630pm    4.820$
+20-Jul-93 & 114.55 & Camb    & nodata               & nodata               & nodata               & $  70.9pm    7.09$& nodata               
+30-Jul-93 & 124.38 & Camb    & nodata               & nodata               & nodata               & $  64.9pm    6.49$& nodata               
+30-Jul-93 & 124.88 & VLA-C   & $   9.770pm    0.982$& $ 110.540pm    5.539$& $ 103.430pm    5.179$& $  62.920pm    4.761$& $  41.680pm    4.457$
+02-Aug-93 & 127.74 & Camb    & nodata               & nodata               & nodata               & $  56.7pm    5.67$& nodata               
+04-Aug-93 & 129.75 & Camb    & nodata               & nodata               & nodata               & $  56.8pm    5.68$& nodata               
+05-Aug-93 & 130.34 & Camb    & nodata               & nodata               & nodata               & $  61.3pm    6.13$& nodata               
+06-Aug-93 & 131.95 & VLA-C   & $  11.720pm    1.430$& $ 116.930pm    6.236$& $ 115.980pm    6.075$& $  58.860pm    4.513$& nodata               
+10-Aug-93 & 135.94 & VLA-C/D & $  16.747pm    1.752$& $ 112.510pm    5.660$& $  84.150pm    4.223$& $  37.856pm    2.884$& $  19.540pm    2.223$
+12-Aug-93 & 137.93 & VLA-C/D & $  17.193pm    1.964$& $ 110.230pm    5.523$& nodata               & $  42.091pm    3.219$& $  26.270pm    2.859$
+13-Aug-93 & 138.32 & Camb    & nodata               & nodata               & nodata               & $  54.7pm    5.47$& nodata               
+14-Aug-93 & 139.73 & Camb    & nodata               & nodata               & nodata               & $  56.2pm    5.62$& nodata               
+16-Aug-93 & 141.72 & Camb    & nodata               & nodata               & nodata               & $  56.6pm    5.66$& nodata               
+17-Aug-93 & 142.79 & VLA-C   & $  15.180pm    1.583$& $ 114.720pm    5.971$& $  92.280pm    4.904$& nodata               & $  31.360pm    3.651$
+20-Aug-93 & 145.45 & Camb    & nodata               & nodata               & nodata               & $  60.6pm    6.06$& nodata               
+21-Aug-93 & 146.41 & Camb    & nodata               & nodata               & nodata               & $  54.8pm    5.48$& nodata               
+22-Aug-93 & 147.71 & Camb    & nodata               & nodata               & nodata               & $  57.4pm    5.74$& nodata               
+23-Aug-93 & 148.54 & VLA-C   & $  15.137pm    1.576$& $ 112.250pm    5.925$& $  88.740pm    4.574$& $  59.740pm    4.502$& $  36.350pm    3.716$
+25-Aug-93 & 150.49 & Camb    & nodata               & nodata               & nodata               & $  56.1pm    5.61$& nodata               
+26-Aug-93 & 151.93 & VLA-C   & $  17.560pm    1.906$& $120.120pm6.057$ & $ 102.840pm    5.334$& nodata & $  35.540pm    4.317$
+29-Aug-93 & 154.69 & Camb    & nodata               & nodata               & nodata               & $  49.7pm    4.97$& nodata               
+31-Aug-93 & 156.78 & VLA-C/D & nodata               & $ 111.520pm    5.620$& $  92.185pm    4.688$& $  47.432pm    3.618$& $  27.964pm    2.990$
+02-Sep-93 & 158.39 & Camb    & nodata               & nodata               & nodata               & $  50.2pm    5.02$& nodata               
+03-Sep-93 & 159.33 & Camb    & nodata               & nodata               & nodata               & $  50.6pm    5.06$& nodata               
+05-Sep-93 & 161.35 & Camb    & nodata               & nodata               & nodata               & $  47.8pm    4.78$& nodata               
+06-Sep-93 & 162.48 & Camb    & nodata               & nodata               & nodata               & $  48.5pm    4.85$& nodata               
+09-Sep-93 & 165.59 & Camb    & nodata               & nodata               & nodata               & $  48.3pm    4.83$& nodata               
+11-Sep-93 & 167.91 & VLA-C/D & $  22.790pm    2.751$& $ 103.650pm5.202$& nodata & nodata & nodata               
+13-Sep-93 & 169.59 & Camb    & nodata               & nodata               & nodata               & $  48.1pm    4.81$& nodata               
+15-Sep-93 & 171.49 & Camb    & nodata               & nodata               & nodata               & $  45.1pm    4.51$& nodata               
+18-Sep-93 & 174.33 & Camb    & nodata               & nodata               & nodata               & $  43.5pm    4.35$& nodata               
+18-Sep-93 & 174.72 & VLA-C/D & nodata               & nodata               & $  78.700pm    3.984$& $  49.500pm    3.732$& $  39.100pm    3.918$
+19-Sep-93 & 175.00 & VLAtablenotemark{c} & nodata & nodata & $78.7pm 4.0$ & $49.5pm 3.0$ & nodata 
+19-Sep-93 & 175.75 & VLA-C/D & $  26.870pm    3.148$& $ 103.990pm    5.211$& $  61.341pm    3.207$& $  37.243pm    2.810$& $  22.630pm    2.302$
+25-Sep-93 & 181.34 & Camb    & nodata               & nodata               & nodata               & $  44.8pm    4.48$& nodata               
+26-Sep-93 & 182.75 & VLA-C/D & $  30.940pm    3.488$& $ 104.930pm    5.268$& $  70.460pm    3.594$& $  43.950pm    3.324$& $  28.000pm    2.864$
+27-Sep-93 & 183.30 & Camb    & nodata               & nodata               & nodata               & $  43.4pm    4.34$& nodata               
+29-Sep-93 & 185.62 & Camb    & nodata               & nodata               & nodata               & $  42.7pm    4.27$& nodata               
+04-Oct-93 & 190.50 & Camb    & nodata               & nodata               & nodata               & $  39.8pm    3.98$& nodata               
+04-Oct-93 & 190.66 & VLA-C/D & $  28.303pm    3.098$& $ 100.050pm    5.013$& $  68.947pm    3.491$& $  39.930pm    3.006$& $  24.152pm    2.437$
+08-Oct-93 & 194.31 & Camb    & nodata               & nodata               & nodata               & $  43.7pm    4.37$& nodata               
+09-Oct-93 & 195.27 & Camb    & nodata               & nodata               & nodata               & $  42.7pm    4.27$& nodata               
+16-Oct-93 & 202.26 & Camb    & nodata               & nodata               & nodata               & $  44.1pm    4.41$& nodata               
+17-Oct-93 & 203.80 & VLA-C/D & $  35.770pm    3.982$& $  99.880pm    5.012$& $  65.150pm    3.791$& $  24.650pm    2.003$& $  15.970pm    1.939$
+25-Oct-93 & 211.56 & Camb    & nodata               & nodata               & nodata               & $  37.9pm    3.79$& nodata               
+25-Oct-93 & 211.61 & VLA-C/D & $  33.220pm    3.662$& $  97.260pm 4.905$& nodata & $  37.320pm    2.830$& $  23.640pm    2.486$
+01-Nov-93 & 218.58 & VLA-D   & $  24.590pm    2.478$& $ 105.560pm    5.474$& $  67.210pm    3.471$& $  38.930pm    2.954$& $  30.360pm    3.101$
+05-Nov-93 & 222.26 & Camb    & nodata               & nodata               & nodata               & $  37.8pm    3.78$& nodata               
+06-Nov-93 & 223.00 & VLAtablenotemark{c} & $61.5pm 5.8$ & $97.6pm 4.9$ & $64.7 pm 3.2$ & $39.6pm 2.0$ & $25.7pm 3.9$ 
+06-Nov-93 & 223.21 & Camb    & nodata               & nodata               & nodata               & $  38.4pm    3.84$& nodata               
+10-Nov-93 & 227.23 & Camb    & nodata               & nodata               & nodata               & $  39.7pm    3.97$& nodata               
+11-Nov-93 & 228.22 & Camb    & nodata               & nodata               & nodata               & $  36.4pm    3.64$& nodata               
+16-Nov-93 & 233.40 & Camb    & nodata               & nodata               & nodata               & $  37.1pm    3.71$& nodata               
+19-Nov-93 & 236.58 & VLA-D   & $  34.510pm    3.466$& $  97.110pm    4.924$& $  64.320pm    3.252$& $  38.610pm    2.921$& $  25.790pm    2.643$
+20-Nov-93 & 237.17 & Camb    & nodata               & nodata               & nodata               & $  35.4pm    3.54$& nodata               
+23-Nov-93 & 240.06 & Camb    & nodata               & nodata               & nodata               & $  36.1pm    3.61$& nodata               
+28-Nov-93 & 245.56 & VLA-D   & $  47.020pm    5.230$& $  94.940pm    4.758$& $  61.470pm    3.083$& $  36.840pm    2.813$& $  26.140pm    2.701$
+29-Nov-93 & 246.45 & Camb    & nodata               & nodata               & nodata               & $  32.2pm    3.22$& nodata               
+01-Dec-93 & 248.26 & Camb    & nodata               & nodata               & nodata               & $  35.5pm    3.55$& nodata               
+02-Dec-93 & 249.14 & Camb    & nodata               & nodata               & nodata               & $  32.7pm    3.27$& nodata               
+03-Dec-93 & 250.14 & Camb    & nodata               & nodata               & nodata               & $  32.6pm    3.26$& nodata               
+05-Dec-93 & 252.14 & Camb    & nodata               & nodata               & nodata               & $  33.5pm    3.35$& nodata               
+05-Dec-93 & 252.58 & VLA-D   & $  59.100pm    6.118$& $  91.660pm    4.674$& $  59.630pm    2.994$& $  32.290pm    2.440$& $  23.720pm    2.468$
+06-Dec-93 & 253.13 & Camb    & nodata               & nodata               & nodata               & $  32.6pm    3.26$& nodata               
+17-Dec-93 & 264.00 & VLAtablenotemark{c} & $86.3pm 4.7$ & $93.3pm 4.7$ & $57.1pm 2.9$ & $33.2pm 1.7$ & $27.4pm 2.0$ 
+19-Dec-93 & 266.58 & VLA-D   & $  63.110pm    6.642$& $  89.160pm    4.517$& $  56.880pm    2.873$& $  34.300pm    2.625$& $  22.260pm    2.365$
+20-Dec-93 & 267.15 & Camb    & nodata               & nodata               & nodata               & $  34.0pm    3.40$& nodata               
+22-Dec-93 & 269.10 & Camb    & nodata               & nodata               & nodata               & $  32.9pm    3.29$& nodata               
+25-Dec-93 & 272.09 & Camb    & nodata               & nodata               & nodata               & $  32.5pm    3.25$& nodata               
+26-Dec-93 & 273.93 & Camb    & nodata               & nodata               & nodata               & $  33.3pm    3.33$& nodata               
+27-Dec-93 & 274.56 & VLA-D   & $  63.590pm    6.522$& $  87.350pm    4.396$& $  55.750pm    3.156$& $  33.280pm    2.525$& $  23.520pm    2.472$
+28-Dec-93 & 275.93 & Camb    & nodata               & nodata               & nodata               & $  34.5pm    3.45$& nodata               
+03-Jan-94 & 281.07 & Camb    & nodata               & nodata               & nodata               & $  33.2pm    3.32$& nodata               
+07-Jan-94 & 285.37 & VLA-D   & $  58.780pm    5.965$& $  84.470pm    4.238$& $  55.740pm    2.817$& $  33.740pm    2.547$ & $  23.080pm    2.357$
+10-Jan-94 & 288.12 & Camb    & nodata               & nodata               & nodata               & $  34.0pm    3.40$& nodata               
+13-Jan-94 & 291.51 & VLA-D   & $  58.900pm    5.957$& $  84.850pm    4.267$& $  54.640pm    2.804$& $  32.480pm    2.449$& $  23.420pm    2.373$
+27-Jan-94 & 305.30 & VLA-D   & $  50.400pm    5.125$& $  80.860pm    4.052$& $  55.430pm    2.832$& $  32.260pm    2.443$& $  22.140pm    2.302$
+28-Jan-94 & 306.00 & VLAtablenotemark{c} & nodata & $80.4pm 4.000$ & $ 52.2pm 2.6$ & $29.2pm 2.9$ & nodata 
+28-Jan-94 & 306.86 & Camb    & nodata               & nodata               & nodata               & $  29.9pm    2.99$& nodata               
+07-Feb-94 & 316.82 & Camb    & nodata               & nodata               & nodata               & $  30.2pm    3.02$& nodata               
+08-Feb-94 & 317.22 & VLA-D   & $  60.830pm    6.472$& $  94.640pm    4.804$& $  60.240pm    3.106$& $  31.230pm    2.395$& $  24.950pm    2.614$
+15-Feb-94 & 324.80 & Camb    & nodata               & nodata               & nodata               & $  27.8pm    2.78$& nodata               
+17-Feb-94 & 326.90 & Camb    & nodata               & nodata               & nodata               & $  26.6pm    2.66$& nodata               
+18-Feb-94 & 327.30 & VLA-A   & $  78.700pm    7.882$& $  79.720pm    4.031$& $  49.420pm    2.490$& $  34.350pm    2.610$& $  17.980pm    2.057$
+19-Feb-94 & 328.96 & Camb    & nodata               & nodata               & nodata               & $  26.1pm    2.61$& nodata               
+20-Feb-94 & 329.96 & Camb    & nodata               & nodata               & nodata               & $  25.700pm    2.570$& nodata               
+08-Mar-94 & 345.18 & Camb    & nodata               & nodata               & nodata               & $  27.4pm    2.74$& nodata               
+08-Mar-94 & 345.80 & Camb    & nodata               & nodata               & nodata               & $  26.5pm    2.65$& nodata               
+15-Mar-94 & 352.00 & VLAtablenotemark{c} & $99.1pm 5.0$ & $ 71.4pm 3.6$ & $45.7pm 2.3$ & nodata & nodata 
+20-Mar-94 & 357.36 & VLA-A   & $  91.217pm    9.123$& $  74.070pm    3.762$& $  43.370pm    2.282$& $  29.717pm    2.276$& $  15.540pm    1.929$
+22-Mar-94 & 359.00 & Camb    & nodata               & nodata               & nodata               & $  28.4pm    2.84$& nodata               
+07-Apr-94 & 375.70 & Camb    & nodata               & nodata               & nodata               & $  21.3pm    2.13$& nodata               
+12-Apr-94 & 380.16 & VLA-A   & $  86.830pm    8.684$& nodata               & nodata               & nodata               & nodata               
+22-Apr-94 & 390.00 & VLAtablenotemark{c} & $102.7pm 5.1$ & nodata & nodata &nodata &nodata 
+22-Apr-94 & 390.10 & VLA-A   & nodata               & $  65.820pm    3.291$& $  42.210pm    2.111$& nodata               & nodata               
+25-Apr-94 & 393.18 & VLA-A   & $  87.470pm    8.772$& $  64.490pm    3.274$& $  39.820pm    2.009$& $  17.950pm    1.447$& $  10.390pm    1.247$
+14-May-94 & 412.57 & Camb    & nodata               & nodata               & nodata               & $  21.8pm    2.18$& nodata               
+26-May-94 & 424.16 & VLA-A/B & $  96.810pm    9.707$& $  73.280pm    3.757$& $  40.290pm    2.071$& $  26.790pm    2.061$& $  12.320pm    1.407$
+20-Jun-94 & 449.60 & Camb    & nodata               & nodata               & nodata               & $  23.3pm    2.33$& nodata               
+22-Jun-94 & 451.00 & VLAtablenotemark{c} & nodata & $ 59.3pm 3.0$ & $39.0pm 2.0$ &nodata &  nodata 
+23-Jun-94 & 452.98 & VLA-B   & $ 104.520pm   10.534$& $  53.820pm    2.919$& $  30.550pm    1.627$& nodata               & $   7.196pm    0.896$
+01-Sep-94 & 522.69 & VLA-B   & $ 101.940pm   10.297$& $  57.430pm    3.041$& $  30.770pm    1.674$& $  15.710pm    1.313$& $   9.080pm    1.442$
+13-Oct-94 & 564.64 & VLA-C   & $ 101.290pm   10.215$& $  51.060pm    3.135$& $  29.260pm    2.183$& $  14.440pm    1.248$& $   9.960pm    1.622$
+31-Oct-94 & 582.00 & VLAtablenotemark{c} & nodata & $53.0pm 2.6$ & $ 33.0pm 1.7$ &nodata & nodata 
+07-Nov-94 & 589.47 & VLA-C   & $ 112.280pm   11.291$& $  42.450pm    2.188$& $  31.480pm    1.584$& nodata               & nodata               
+23-Dec-94 & 635.00 & VLAtablenotemark{c} & nodata & $49.0pm 2.5$ & $31.9pm 1.6$ & nodata & nodata 
+05-Jan-95 & 648.39 & VLA-C/D & $ 107.010pm   10.736$& $  45.210pm    2.764$& $  23.210pm    1.920$& $  16.220pm    1.667$& $  15.290pm    2.638$
+12-Feb-95 & 686.00 & VLAtablenotemark{c} & $120.0pm 10.0$ & $46.4pm 2.3$ & $29.2pm 1.5$ & nodata & nodata 
+06-Apr-95 & 739.14 & VLA-D   & $ 118.840pm   12.205$& $  44.230pm    2.242$& $  28.200pm    1.468$& $   9.670pm    0.864$& $  14.800pm    1.593$
+11-May-95 & 774.00 & VLAtablenotemark{c} & nodata & nodata & $25.6pm 1.5$ & nodata & nodata 
+16-Jun-95 & 810.05 & VLA-D/A & $ 101.760 pm   10.247$ & $  34.960pm1.939$ & $  16.480pm    0.877$&  $6.490 pm 0.727$ &  nodata 
+18-Aug-95 & 873.00 & VLAtablenotemark{c} & nodata & $37.7pm 1.9$ & $24.5pm 1.2$ & nodata & nodata 
+06-Oct-95 & 922.69 & VLA-B   & $  99.910pm    9.992$& $  35.810pm    1.965$& $  23.300pm    1.425$& $  14.300pm    1.152$& $   9.360pm    1.086$
+19-Dec-95 & 996.00 & VLAtablenotemark{c} & nodata & $33.9pm 1.7$ & $22.1pm 1.1$ & nodata & nodata 
+12-Jan-96 &1020.00 & VLA-B/C & $  84.007pm    8.415$& $  33.770pm    1.696$& $21.062pm 1.061$ & $  13.345pm    1.030$& $   9.393pm    0.983$
+08-Apr-96 & 1107.00 & VLAtablenotemark{c} & nodata & $31.4pm 1.6$ & $20.2pm 1.1$ &nodata & $10.3pm 0.7$ 
+01-Sep-96 & 1253.00 & VLAtablenotemark{c} & nodata & $29.0pm 1.4$ & $ 19.1pm 1.0$ & nodata & nodata 
+05-Oct-96 &1287.57 & VLA-D/A & $70.860pm7.132$ & $  26.950pm    1.434$& $  16.310pm    2.013$& $  10.370pm    1.672$& $   9.160pm    2.899$
+13-Dec-96 & 1356.00 & VLAtablenotemark{c} & $70.8pm 3.7$ & $ 28.6pm 1.4$ & $ 18.7pm 0.9$ & nodata & nodata 
+23-Jan-97 &1397.21 & VLA-A/B & $  71.910pm    7.297$& $  26.340pm    1.573$& $  16.750pm    0.965$& $  10.700pm    0.915$& $   7.340pm    0.974$
+07-Jun-97 & 1532.00 & VLAtablenotemark{c} & nodata & $26.3pm 1.3$ & $17.2pm 0.9$ & nodata & nodata 
+14-Aug-97 &1600.99 & VLA-C/D & $  61.631pm    6.176$& nodata               & nodata               & nodata               & nodata               
+15-Nov-97 & 1693.00 & VLAtablenotemark{c} & $60.6pm 3.3$ & $24.3pm 1.3$ & $17.2pm 0.9$ & $14.0pm 2.6$ & $10.4pm 1.3$ 
+03-Jun-98 & 1893.00 & VLAtablenotemark{c} & nodata & $22.8pm 1.3$ & $16.0pm 1.0$ & nodata & nodata 
+09-Jun-98 &1899.85 & VLA-A/B & $52.165pm 5.356$ & $  20.803pm    1.136$& $  9.632pm 0.610$& $   4.735pm    0.435$& $   3.927pm    0.762$
+20-Nov-98 & 2063.00 & VLAtablenotemark{c} &$ 48.2 pm 2.8 $ & $20.5pm 1.1$ & $ 13.9 pm 0.7 $ & $ 12.3 pm 1.0 $ & $ 7.7 pm 0.9 $
+07-Dec-98 & 2080.00 & VLAtablenotemark{c} &$ 47.9 pm 2.8 $ & $20.7pm 1.0$ & $ 14.3 pm 0.8 $ & $ 12.3 pm 1.3 $ & $ 5.1 pm 1.0 $
+06-Jun-99 & 2261.00 & VLAtablenotemark{c} &$ 39.6 pm 2.1 $ & nodata & $ 12.8 pm 0.8 $ & $ 8.4 pm 0.8 $ & $ 5.5 pm 1.0 $
+13-Jun-99 &2268.96 & VLA-D/A & $  37.770pm    3.799$& $  12.155pm    0.927$& nodata               & nodata               & nodata  
+16-Jun-99 & 2271.00 & VLAtablenotemark{c} &nodata & $ 20.9 pm 1.2 $ & nodata & nodata & nodata
+24-Nov-99 & 2432.00 & VLAtablenotemark{c} &$ 38.8 pm 2.3 $ & $ 17.5 pm 0.9 $ & $ 12.5 pm 0.7 $ & nodata & nodata
+25-Feb-00 & 2525.00 & VLAtablenotemark{c} &nodata & nodata & $ 12.0 pm 0.8 $ & $ 9.0 pm 4.0 $ & nodata
+08-Nov-00 & 2782.00 & GMRTtablenotemark{d} &$ 35.1 pm 3.5 $ & nodata & nodata & nodata & nodata
+13-Nov-00 & 2787.00 & VLAtablenotemark{c} &$ 33.8 pm 1.7 $ & nodata & $ 10.9 pm 0.6 $ & $ 8.3 pm 0.8 $ & nodata
+16-Dec-00 &2820.00 & GMRTtablenotemark{d}    & $  36.1pm    3.6$& nodata & nodata               & nodata               & nodata               
+19-Dec-00 & 2823.00 & VLA-Atablenotemark{e} &$ 30.5 pm 0.4$ &  nodata  & nodata & nodata & nodata
+19-Dec-00 & 2823.00 & VLA-Atablenotemark{e} &$33.7pm 0.4$ &nodata &nodata & nodata &nodata 
+21-Dec-00 & 2825.00 & VLA-Atablenotemark{e} & nodata & $14.7 pm 0.4$ & $10.4 pm 0.2$ & $6.7 pm 0.1$ &nodata 
+23-Jan-01 & 2858.00 & VLAtablenotemark{c} &nodata & nodata & $ 9.7 pm 0.7 $ & nodata & nodata
+02-Jun-01 &2988.00 & GMRTtablenotemark{d}    & $  32.7pm    3.3$& nodata               & nodata               & nodata               & nodata               
+10-Jun-01 & 2996.00 & VLAtablenotemark{c} &$ 28.8 pm 1.6 $ & $ 14.4 pm 0.7 $ & $ 9.4 pm 0.5 $ & nodata & nodata
+15-Oct-01 & 3123.00 & GMRTtablenotemark{d} &$ 33.9 pm 3.3 $ & nodata & nodata & nodata & nodata
+25-Nov-01 & 3164.00  & VLA-Atablenotemark{c} &$ 24.4 pm 1.5 $ & nodata & $ 8.4 pm 0.5 $ & nodata & nodata
+13-Jan-02 &3213.38 & VLA-D/A & $  31.440pm    4.278$& $  15.000pm    0.774$& $   7.880pm    0.459$& $   4.490pm    0.479$& $   2.495pm    0.282$
+07-Apr-02 & 3297.00 & GMRTtablenotemark{d} &$ 24.6 pm 3.7 $ & nodata & nodata & nodata & nodata
+24-Jun-02 & 3375.00 & GMRTtablenotemark{d} &$ 23.4 pm 2.5 $ & nodata & nodata & nodata & nodata
+21-Sep-02 & 3464.00 & GMRTtablenotemark{d} &$ 24.2 pm 2.4 $ & nodata & nodata & nodata & nodata
+23-May-03 & 3708.93 & VLA-A &$ 17.377 pm 1.968 $ & $ 6.962 pm 0.429 $ & $ 3.943 pm 0.207 $ & nodata & $ 1.928 pm 0.237 $
+13-Jun-03 & 3729.00 & GMRTtablenotemark{d} &$ 20.2 pm 2.1 $ & nodata & nodata & nodata & nodata
+26-Jun-03 & 3742.91 & VLA-A &nodata & $ 8.349 pm 0.424 $ & nodata & $ < 0.975 $ & $ < 0.816 $
+29-Jan-04 & 3959.47 & VLA-B/C &$ 14.359 pm 1.469 $ & $ 6.973 pm 0.376 $ & $ 4.513 pm 0.241 $ & $ 2.492 pm 0.215 $ & $ 1.792 pm 0.191 $
+10-Sep-04 & 4184.57 & VLA-A &$ 11.309 pm 1.142 $ & $ 5.526 pm 0.304 $ & $ 3.220 pm 0.257 $ & $ 2.470 pm 0.323 $ & $ 0.967 pm 0.217 $
+13-Jun-05 & 4460.90 & VLA-B/C &$ 8.893 pm 0.894 $ & $ 3.906 pm 0.276 $ & $ 2.562 pm 0.136 $ & $ 0.990 pm 0.152 $ & $ 0.897 pm 0.139 $
+24-Jan-06 & 4685.17 & VLA-D &nodata & $ 3.880 pm 0.480 $ & $ 1.307 pm 0.371 $ & $ < 1.440 $ & nodata
+28-Jun-06 & 4840.05 & VLA-B &$ 5.303 pm 0.469 $ & nodata & nodata & nodata & nodata
+25-Sep-06 & 4929.64 & VLA-B/C &nodata & $ < 1.800 $ & $ < 0.957 $ & nodata & nodata 
