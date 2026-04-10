@@ -32,7 +32,7 @@ print(Planck18.angular_diameter_distance(z=vals.redshifts[obj_name])*c1.separati
 if __name__ == '__main__':
     ### First figure is Normalized Offsets
     ######## Comparison data
-    hostnormedoffset_compare = np.loadtxt('comparison_normed_data.txt',skiprows=2)
+    hostnormedoffset_compare = np.loadtxt('data/offsets/comparison_normed_data.txt',skiprows=2)
     # 0 = FRBs - IR+UV - Bhandari 2022
     # 1 = LGRBs - IR/UVIS - Blanchard et al. 2016
     # 2 = LGRBs - IR - Lyman et al. 2017
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     plt.figure(86)
     plt.subplot(1,1,1)
     ######## Comparison data
-    offset_compare = np.loadtxt('comparison_offset_data.txt',skiprows=2)
+    offset_compare = np.loadtxt('data/offsets/comparison_offset_data.txt',skiprows=2)
     # 0 = FRBs - IR+UV - Bhnadari+22
     # 1 = LGRBs - IR/UVIS - Blanchard et al. 2016
     # 2 = LGRBs - IR - Lyman et al. 2017
@@ -132,9 +132,9 @@ if __name__ == '__main__':
     patches[0].set_xy(patches[0].get_xy()[:-1])
     plt.plot([0,1],[-1,-2],'-b',linewidth=2,label='FRBs')
     
-    N,bins,patches = plt.hist(offset_compare[:,4][offset_compare[:,4]<999],histtype='step',density=True,cumulative=True,bins=1000,linewidth=2,color='g',linestyle='-')
+    N,bins,patches = plt.hist(offset_compare[:,4][offset_compare[:,4]<999],histtype='step',density=True,cumulative=True,bins=1000,linewidth=2,color='g',linestyle='--')
     patches[0].set_xy(patches[0].get_xy()[:-1])
-    plt.plot([0,1],[-1,-2],'-g',linewidth=2,label='SNe Ia')
+    plt.plot([0,1],[-1,-2],'-g',linestyle='--',linewidth=2,label='SNe Ia')
     
     N,bins,patches = plt.hist(offset_compare[:,7][offset_compare[:,7]<999],histtype='step',density=True,cumulative=True,bins=1000,linewidth=2,color='#ff9900',linestyle='--')
     patches[0].set_xy(patches[0].get_xy()[:-1])

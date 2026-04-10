@@ -28,6 +28,24 @@ if __name__=="__main__":
 
     # Add 24puz (Somalwar et al. 2025)
     ax.scatter(1e8, 0.01, marker='*', c=vals.tde_col, label='TDE')
+    # Add PS16dtm (Blanchard et al. 2017)
+    ax.scatter(10**9.94, 0.62, marker='*', c=vals.tde_col)
+    # Add ASASSN-19dj (Hinkle et al. 2021)
+    ax.scatter(9.3E9, 0.069, marker='*', c=vals.tde_col)
+
+    # Add Law-Smith et al. 2017
+    ax.scatter(1E9*np.array([6.991224424234592, 4.317684633381446, 12.960062595945047, 1.6608034466403945,
+                             26.59038357415234, 19.612531753248593, 7.170825520626174, 13.405869321574244]),
+                             [0.09618967191851181, 0.21532851277863677, 0.1524695760190438, 0.03283461520243534,
+                              0.9768912740207437, 0.9432973494413077, 0.306877894337046, 0.7104581217061385], marker='*', c=vals.tde_col)
+    
+    # Add French et al. 2020
+    ax.scatter(1E9*np.array([3.067083952667387, 4.381198399592362, 6.32244348188405, 14.727925983649184, 19.194899416590673,6.859353513198433,
+                             8.324419967983694, 11.770541968743997, 15.81666966047763, 78.30785170932737, 73.66422721240129]),
+                             [0.012859231566061379, 0.00818406901910969, 0.013114370237884445, 0.05188204246747923, 0.019812000380216088, 0.06966319886777644,
+                              0.24981063395206232, 0.5481606418769251, 0.8783872167530211, 2.488309724738728, 1.583648169298888], marker='*', c=vals.tde_col)
+
+
     # Add 18cow
     x = 1.42E9
     xbot = (1.42-0.29)*1E9
@@ -135,7 +153,7 @@ if __name__=="__main__":
     ax.set_ylabel(r"Star formation rate ($M_\odot$ yr${}^{-1}$)", fontsize=10)
     ax.tick_params(labelsize=8)
     ax.set_ylim([10**-3.4, 10**1.3])
-    ax.legend(loc='lower right', prop={'size':7.5})
+    ax.legend(loc='lower right', prop={'size':6}, ncol=2, columnspacing=0.5)
     plt.tight_layout()
     plt.savefig("figures/fig10_host_galaxy.pdf", dpi=450, bbox_inches='tight', pad_inches=0)
     plt.show()

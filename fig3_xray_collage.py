@@ -42,9 +42,9 @@ from load_grb_xlc import add_grb_lcs, add_xlc_sn1998bw, add_xlc_sn2010dh, \
 def add_at2022cmc(ax, color = "tab:darkgrey", ms=9):
     z = 1.1933
     a = pd.read_csv("data/xray/at2022cmc_nicer.dat", delimiter=' ')
-    ax.plot(a['x'], a['L'], color=color, lw=0.5, zorder=10, ls='-.')#, label='AT2022cmc')
+    ax.plot(a['x'], a['L'], color=color, lw=1, zorder=10, ls='-.')
     a = pd.read_csv("data/xray/at2022cmc_xrt.dat", delimiter=' ')
-    ax.plot(a['x'], a['L'], color=color, lw=0.5, zorder=10, ls='-.', label='TDE',)
+    ax.plot(a['x'], a['L'], color=color, lw=1, zorder=10, ls='-.', label='TDE',)
 
 
 def add_cow(ax, color = "k"):
@@ -96,14 +96,14 @@ def add_css(ax, color = "cyan"):
     ax.plot(t2[1:], L2[1:], ls='--', color=color)
     ax.plot(t2[0:2], L2[0:2], ls='-', color=color)
 
-    ax.scatter(dt[1:], L[1:], marker='D', edgecolor=color, s=10, facecolor='white', zorder=50)
+    ax.scatter(dt[1:], L[1:], marker='D', edgecolor=color, s=10, facecolor='white', zorder=50, label='CSS161010')
     for (t_upper, y_upper) in  zip(dt[1:], L[1:]):
         ax.arrow(t_upper, y_upper, 0, -y_upper/1.4, length_includes_head=True, 
              head_width=t_upper/10, head_length=y_upper/8, color=color, zorder=200)
     ax.scatter(dt[0], L[0], marker='D', color=color, s=10, zorder=4)
     ax.errorbar(dt[0], L[0], yerr=[[2.4e41], [3.6e41]],
                 ecolor=color, elinewidth=0.7, fmt='none', zorder=50)
-    ax.text(t2[0]/2, L2[0]*1.8, 'CSS161010', c=color, ha='center', fontsize=7, zorder=100, fontweight='bold')
+    #ax.text(t2[0]/2, L2[0]*1.8, 'CSS161010', c=color, ha='center', fontsize=7, zorder=100, fontweight='bold')
 
 
 
@@ -267,8 +267,8 @@ def add_22abfc(ax, color='blue'):
     dt = 17/(1+0.212)
     # convert from erg/cm/cm/s to luminosity
     L = 2*10**(-13)*4*np.pi*dcm**2
-    ax.scatter(dt, L, marker=vals.markers['AT2022abfc'], s=30,facecolor='white', edgecolor=color, zorder=100)
-    ax.text(1.1*dt, L/2.2, 'AT2022abfc', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
+    ax.scatter(dt, L, marker=vals.markers['AT2022abfc'], s=30,facecolor='white', edgecolor=color, zorder=100, label='AT2022abfc')
+    #ax.text(1.1*dt, L/2.2, 'AT2022abfc', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
     ax.arrow(dt, L, 0, -L/1.4, length_includes_head=True, 
              head_width=dt/10, head_length=L/8, facecolor='white', edgecolor=color, zorder=200)
 
@@ -285,18 +285,18 @@ def add_23fhn(ax, color='blue'):
     low_err = L[[0,2,3]] - np.array([428.6524566284672e39,332.97515343671637e39,350.4361057720496e39])
     up_err = np.array([8963.396428135813e39,895.0755220357021e39,817.9128005984965e39])- L[[0,2,3]]
     print(np.array([8963.396428135813e39,895.0755220357021e39,817.9128005984965e39]))
-    print(L[[0,2,3]])
+
     L_err = [low_err, up_err]
-    print(L_err)
+
     ax.plot(dt, L, marker=None, c=color, ls='--')
-    ax.scatter(dt[[1, 4]], L[[1, 4]], s=30, marker=marker, facecolor='white', edgecolor=color, zorder=100)
+    ax.scatter(dt[[1, 4]], L[[1, 4]], s=30, marker=marker, facecolor='white', edgecolor=color, zorder=100, label='AT2023fhn')
     for (t_upper, y_upper) in  zip(dt[[1, 4]], L[[1, 4]]):
         ax.arrow(t_upper, y_upper, 0, -y_upper/1.4, length_includes_head=True, 
              head_width=t_upper/10, head_length=y_upper/8, facecolor='white', edgecolor=color, zorder=200)
     ax.scatter(dt[[0,2,3]], L[[0,2,3]], marker=marker, color=color, s=40, edgecolors = "k", zorder=50)
     ax.errorbar(dt[[0,2,3]], L[[0,2,3]], yerr=L_err,
                 ecolor=color, elinewidth=0.7, fmt='none', zorder=50)
-    ax.text(dt[0]/1.2, L[0]/2.5, 'AT2023fhn', c=color, ha='right', fontsize=11, zorder=100, fontweight='bold')
+    #ax.text(dt[0]/1.2, L[0]/2.5, 'AT2023fhn', c=color, ha='right', fontsize=11, zorder=100, fontweight='bold')
 
 
 
@@ -305,10 +305,10 @@ def add_23hkw(ax, color='blue'):
     dcm = Planck18.luminosity_distance(z=0.339).cgs.value
     dt = 20/(1+0.339)
     L = 1.1*10**(-13)*4*np.pi*dcm**2
-    ax.scatter(dt, L, s=30, marker=marker, facecolor='white', edgecolor=color, zorder=100)
+    ax.scatter(dt, L, s=30, marker=marker, facecolor='white', edgecolor=color, zorder=100, label='AT2023hkw')
     ax.arrow(dt, L, 0, -L/1.4, length_includes_head=True, 
              head_width=dt/10, head_length=L/8, facecolor='white', edgecolor=color, zorder=200)
-    ax.text(dt*1.3,1.5*L, 'AT2023hkw', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
+    #ax.text(dt*1.3,1.5*L, 'AT2023hkw', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
 
 
 def add_23vth(ax, color='blue'):
@@ -316,8 +316,8 @@ def add_23vth(ax, color='blue'):
     dcm = Planck18.luminosity_distance(z=0.0747).cgs.value
     dt = 23/(1+0.0747)
     L = 1.6*10**(-13)*4*np.pi*dcm**2
-    ax.scatter(dt, L, marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100)
-    ax.text(dt*1.2, L, 'AT2023vth', c=color, ha='left', fontsize=11, zorder=50, fontweight='bold')
+    ax.scatter(dt, L, marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100, label='AT2023vth')
+    #ax.text(dt*1.2, L, 'AT2023vth', c=color, ha='left', fontsize=11, zorder=50, fontweight='bold')
     ax.arrow(dt, L, 0, -L/1.4, length_includes_head=True, 
              head_width=dt/10, head_length=L/8, facecolor='white', edgecolor=color, zorder=200)
 
@@ -348,14 +348,14 @@ def add_24qfm(ax, color='blue'):
     ax.plot(dt[1:9], L[1:9], marker=None, c=color, ls='dotted')
     ax.plot(dt[10:], L[10:], marker=None, c=color, ls='dotted')
     # Plot points
-    ax.scatter(dt[dets], L[dets], marker=marker, c=color, s=30, edgecolor='k', zorder=200)
+    ax.scatter(dt[dets], L[dets], marker=marker, c=color, s=30, edgecolor='k', zorder=100)
     ax.errorbar(dt[dets], L[dets], yerr=(np.abs(L_lower), L_upper),
                 ecolor=color, elinewidth=0.7, fmt='none', zorder=50)
-    ax.scatter(dt[~dets], L[~dets],marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100)
+    ax.scatter(dt[~dets], L[~dets],marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100, label='AT2024qfm')
     for (t_upper, y_upper) in  zip(dt[~dets], L[~dets]):
         ax.arrow(t_upper, y_upper, 0, -y_upper/1.4, length_includes_head=True, 
              head_width=t_upper/10, head_length=y_upper/8, facecolor='white', edgecolor=color, zorder=200)
-    ax.text(dt[-2], L[-2]*18, 'AT2024qfm', c=color, ha='center', fontsize=11, zorder=100, fontweight='bold')
+    #ax.text(dt[-2], L[-2]*18, 'AT2024qfm', c=color, ha='center', fontsize=11, zorder=100, fontweight='bold')
 
 def add_24aehp(ax, color='blue'):
     marker=vals.markers['AT2024aehp']
@@ -363,12 +363,12 @@ def add_24aehp(ax, color='blue'):
     dt = np.array([12, 15, 17])/(1+0.1715)
     L = np.array([2.3*10**(-13), 3.0*10**(-13), 2.4*10**(-13)])*4*np.pi*dcm**2
     print(L)
-    ax.scatter(dt, L, marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100)
+    ax.scatter(dt, L, marker=marker, s=30, facecolor='white', edgecolor=color, zorder=100, label='AT2024aehp')
     for (t_upper, y_upper) in  zip(dt, L):
         ax.arrow(t_upper, y_upper, 0, -y_upper/1.4, length_includes_head=True, 
              head_width=t_upper/10, head_length=y_upper/8, facecolor='white', edgecolor=color, zorder=200)
     ax.plot(dt, L, marker=None, c=color, ls='--')
-    ax.text(dt[0]/5.3, L[0]/2.2, 'AT2024aehp', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
+    #ax.text(dt[0]/5.3, L[0]/2.2, 'AT2024aehp', c=color, ha='left', fontsize=11, zorder=100, fontweight='bold')
 
 
 
@@ -380,20 +380,12 @@ def create_xray_panel(ax):
 
     # Old LFBOTs
 
-    add_css(ax, color = vals.fbot_col) 
     add_20xnd(ax, color = vals.fbot_col)    
     add_2020mrf(ax, color = vals.fbot_col)
     add_22tsd(ax, color= vals.fbot_col)
     add_24wpp(ax, color= vals.fbot_col)
-    # New lcs for Cassie
-    add_22abfc(ax, color=vals.colors['AT2022abfc'])
-    add_23fhn(ax, color=vals.colors['AT2023fhn'])
-    add_23hkw(ax, color=vals.colors['AT2023hkw'])
-    add_23vth(ax, color=vals.colors['AT2023vth'])
-    add_24qfm(ax, color=vals.colors['AT2024qfm'])
-    add_24aehp(ax, color=vals.colors['AT2024aehp'])
 
-
+    add_at2022cmc(ax, color=vals.tde_col)
     add_grb_lcs(ax, color=lgrb_col)
 
     # GRB-SN
@@ -402,8 +394,16 @@ def create_xray_panel(ax):
     add_xlc_sn2006aj(ax, color=llgrb_col) # Campana et al. 2006, soderberg et al. 2006
     add_xlc_sn2003dh(ax, color=llgrb_col) # Tiengo et al. 2004
 
-
+    add_css(ax, color = vals.fbot_col) 
     add_cow(ax, color = vals.fbot_col)
+
+    # New lcs for Cassie
+    add_22abfc(ax, color=vals.colors['AT2022abfc'])
+    add_23fhn(ax, color=vals.colors['AT2023fhn'])
+    add_23hkw(ax, color=vals.colors['AT2023hkw'])
+    add_23vth(ax, color=vals.colors['AT2023vth'])
+    add_24qfm(ax, color=vals.colors['AT2024qfm'])
+    add_24aehp(ax, color=vals.colors['AT2024aehp'])
 
     ymax = 7e+47
     ymin = 8e+38
@@ -418,15 +418,15 @@ def create_xray_panel(ax):
     ax.text(15, yccmax*0.25, "Normal CCSNe", color = 'white')
 
     ax.legend(loc = "upper right", #bbox_to_anchor = (0, 0.2)
-              ncol = 1, fontsize=10, handletextpad=0.1)
+              ncol = 2, fontsize=7.5, handletextpad=0.06, columnspacing=0.5)
 
     ax.set_xlabel("$t_\mathrm{rest}$ (d)", fontsize=12)
     ax.set_ylabel("X-ray luminosity [erg s$^{-1}$] ($0.3-10\,$keV)", fontsize=12)
     ax.set_xscale('log')
     ax.set_yscale('log')
     ax.tick_params(axis='both', labelsize=12)
-    ax.set_xlim(1,600)
-    ax.set_ylim(1E39,2E45)
+    ax.set_xlim(1,1100)
+    ax.set_ylim(1E39,6E45)
 
 fig, ax = plt.subplots(1, 1, figsize=(6,4.5), sharex=True, sharey=True)
 ax.legend()

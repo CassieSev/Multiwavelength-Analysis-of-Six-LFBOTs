@@ -270,7 +270,8 @@ def at2023vth(ax, col, legend):
     for (t_upper, y_upper) in  zip(x[-2:], y[-2:]):
         ax.arrow(t_upper, y_upper, 0, -y_upper/2, length_includes_head=True, 
              head_width=t_upper/7, head_length=y_upper/8, color=col, zorder=200)
-    ax.plot(x, y, c=col, lw=2, zorder=5)
+    ax.plot(x[:-2], y[:-2], c=col, lw=2, zorder=5)
+    ax.plot(x[-3:], y[-3:], c=col, lw=2, zorder=5, ls='dotted')
     ax.text(
             x[-3]*1.1, y[-3]/1.5, "AT2023vth", 
             fontsize=8, horizontalalignment='right',
@@ -288,8 +289,8 @@ def at2024aehp(ax, col, legend):
     ax.scatter(x[0], y[0], facecolor='white', edgecolor=col, marker=vals.markers['AT2024aehp'], s=30, zorder=1000)
     ax.plot(x[0:2], y[0:2], c=col, lw=2, zorder=1000, ls='dotted')
     ax.text(
-            x[-2]*1.1, y[-2]/2, "AT2024aehp", 
-            fontsize=8, horizontalalignment='right',
+            x[0], y[0]/1.2, "AT2024aehp", 
+            fontsize=8, horizontalalignment='center',
             verticalalignment='top', color=col,zorder=1000, fontweight='bold')
     # 
 
@@ -664,12 +665,12 @@ if __name__=="__main__":
     bk = 'lightgrey'
 
 
-    #ax.axhline(y=1E37, c='k', ls='--', lw=0.5)
-    #ax.text(
-    #        535,7E36,'Ordinary SNe',
-    #        va='top',style='italic',color='grey',fontsize=10)
-    #ax.text(630,7E38,'Dense CSM', 
-    #        va='top',ha='left', style='italic',color='grey',fontsize=10)
+    ax.axhline(y=1E37, c='k', ls='--', lw=0.5)
+    ax.text(
+            35,8E36,'Ordinary SNe',
+            va='top',style='italic',color='grey',fontsize=10)
+    ax.text(35,1.6E37,'Dense CSM', 
+            va='top',ha='left', style='italic',color='grey',fontsize=10)
     #ax.axhline(y=1E39, c='k', ls='--', lw=0.5)
     #ax.text(
     #        38,7.5E40,'Relativistic explosions', 

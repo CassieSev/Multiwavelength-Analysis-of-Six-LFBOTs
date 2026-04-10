@@ -29,7 +29,7 @@ oc = '#006164' # ATLAS o-band
 # Viridis colors. I got these from https://waldyrious.net/viridis-palette-generator/
 fbot_col = '#29A74F' # green
 lgrb_col = '#ffa7b6'
-tde_col = '#de6aaf'
+tde_col = 'black'
 llgrb_col = '#9279ba'
 sn_col = '#7C7C7C'  # grey
 
