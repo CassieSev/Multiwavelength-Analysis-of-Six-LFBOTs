@@ -794,6 +794,6 @@ ax[1].set_ylim([3.1e47, 1.17e50])
 
 fig.tight_layout(pad=3.0)
 plt.tight_layout()
-plt.savefig('figures/fig7_synchrotron.pdf', dpi=450)
+plt.savefig('figures/fig8_synchrotron.pdf', dpi=450)
 plt.show()
 plt.close()

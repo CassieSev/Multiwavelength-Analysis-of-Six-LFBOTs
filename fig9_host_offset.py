@@ -164,6 +164,6 @@ if __name__ == '__main__':
     #plt.plot([5.35,5.35],[0,1],'-k',linewidth=1) #555
     #plt.plot([5.34,5.34],[0,1],'--k',linewidth=1) #814
 plt.tight_layout()
-plt.savefig('figures/fig8_host_offset.pdf', dpi=450)
+plt.savefig('figures/fig9_host_offset.pdf', dpi=450)
 plt.show()
 

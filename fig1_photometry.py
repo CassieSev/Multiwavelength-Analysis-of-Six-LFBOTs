@@ -41,7 +41,7 @@ def app_to_abs_mag(apparent, redshift, kcorrection=False, unitless=False):
             using Eq. 2 from Whitesides et al (2017) ApJ 851 107
     """
     if kcorrection:
-        apparent += 2.5*np.log10(1+redshift) #
+        apparent += 2.5*np.log10(1+redshift)
     if unitless:
         return (apparent*u.mag-Planck18.distmod(redshift))/u.mag
     return apparent*u.mag-Planck18.distmod(redshift)
@@ -146,7 +146,10 @@ def plot_spec(ax, object):
 
 def make_fig():
     # Make the figure
-    fig, axs = plt.subplots(3,2, figsize=(8,8), layout='constrained')
+    fig, axs = plt.subplots(3,2, figsize=(8,8))
+    plt.subplots_adjust(left=0.08, right=0.92, 
+                    top=0.99, bottom=0.15, 
+                    wspace=0.24, hspace=0.05)
     flat_axs=axs.flatten()
     # Get the distance modulus to convert from apparent to absolute magnitude.  Unfortunately,
     # need to manually define a function for each of these
@@ -210,7 +213,10 @@ def make_fig():
             sec_ax=flat_axs[i].secondary_yaxis('right', functions=(lambda x: x+39.65635114, lambda x: x-39.65635114))
         if i == 3:
             sec_ax.set_ylabel('Apparent AB Mag', fontsize=12)
-        
+        flat_axs[i].tick_params(axis='y', which='major', pad=0)
+        sec_ax.tick_params(axis='y', which='major', pad=0)
+        sec_ax.xaxis.label.set_color('gray')
+        sec_ax.tick_params(axis='y', colors='gray')
         if i == 2:
             flat_axs[i].set_ylabel('Absolute AB Mag', fontsize=12)
         
@@ -223,7 +229,7 @@ def make_fig():
 
     for ax in flat_axs:
         ax.set_xlabel('$t_{\mathrm{rest}}$ (d)', fontsize=14)
-        ax.label_outer()
+        #ax.label_outer()
     fig.legend(loc='outside lower center',  fontsize='12', ncol=5)
     fig.legend(bbox_to_anchor=(0.1, -0.1), loc='upper left')
     plt.savefig('figures/fig1_optical.pdf', dpi=450)

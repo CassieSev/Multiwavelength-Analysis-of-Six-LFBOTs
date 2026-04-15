@@ -281,7 +281,7 @@ elif population=='single_all':
     fig.text(0.033, 0.32, 'at or below log mass', ha='center', fontsize=10, rotation='vertical', va='center')
 
     plt.tight_layout(rect=(0.03, 0.05, 1, 1))
-    plt.savefig('figures/fig11_host_galaxy_sim_all.pdf', dpi=450)
+    plt.savefig('figures/fig12_host_galaxy_sim_all.pdf', dpi=450)
     plt.show()
 
 

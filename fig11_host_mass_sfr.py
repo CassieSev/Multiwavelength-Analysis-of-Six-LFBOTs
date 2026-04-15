@@ -155,6 +155,6 @@ if __name__=="__main__":
     ax.set_ylim([10**-3.4, 10**1.3])
     ax.legend(loc='lower right', prop={'size':6}, ncol=2, columnspacing=0.5)
     plt.tight_layout()
-    plt.savefig("figures/fig10_host_galaxy.pdf", dpi=450, bbox_inches='tight', pad_inches=0)
+    plt.savefig("figures/fig11_host_galaxy.pdf", dpi=450, bbox_inches='tight', pad_inches=0)
     plt.show()
     plt.close()

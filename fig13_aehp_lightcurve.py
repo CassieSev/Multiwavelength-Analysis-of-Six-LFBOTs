@@ -138,7 +138,7 @@ handles, labels = plt.gca().get_legend_handles_labels()
 order=[2,0,1]
 ax1.legend([handles[idx] for idx in order],[labels[idx] for idx in order], fontsize='10')
 plt.tight_layout()
-plt.savefig('figures/fig12_aehp_lc.pdf', dpi=450)
+plt.savefig('figures/fig13_aehp_lc.pdf', dpi=450)
 plt.show()
 plt.close()
 
