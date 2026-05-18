@@ -13,28 +13,27 @@ Byte-by-byte Description of file: datafile6.txt
   28- 33 F3.2   10+9Hz   Observer-Frequency  Median Frequency of Observation
   35- 47 A13    ---      Configuration       Configuration of the Array that took the Observation
   49- 52 I3     10-6Jy   Flux-Density        Measured Flux Density if detection, 3-sigma upper limit if non-detection
-  54- 57 I3     10-6Jy   Flux-Error          ? Measured Flux Error if detection, negative if non-detection, omitted if unknown)
+  54- 57 I3     10-6Jy   Flux-Error          ? Measured Flux Error if detection, negative if non-detection, omitted if unknown
 --------------------------------------------------------------------------------
-Note (1):   Frequencies are in the observer frame. We require SNR > 3 for a detection. Otherwise, we list the 3-σ upper limits for a non-detection.
-Note (2):   AT2022abfc June 22, 2023 GMRT Band 5 measurement was binned a GMRT Band-5 observation on June 2, 2023
-Note (3):   AT2023vth Jan 13, 2024 NOEMA Band 3 measurement was binned with short observations on Jan 11, 2024 at the same band and observatory
-Note (4):   AT2024aehp May 17, 2025 AMI measurement was obtained from a Shoval et al. TNS Astronote which did not provide uncertainties
+Note (1):   Some X-band observations are split into two sub-bands, one with a central frequency at 9 GHz and the other at 11 GHz
+Note (2):   Frequencies are in the observer frame. We require SNR > 3 for a detection. Otherwise, we list the 3-σ upper limits for a non-detection.
+Note (3):   AT2022abfc June 22, 2023 GMRT Band 5 measurement was binned a GMRT Band-5 observation on June 2, 2023
+Note (4):   AT2023vth Jan 13, 2024 NOEMA Band 3 measurement was binned with short observations on Jan 11, 2024 at the same band and observatory
+Note (5):   AT2024aehp May 17, 2025 AMI measurement was obtained from a Shoval et al. TNS Astronote which did not provide uncertainties
 --------------------------------------------------------------------------------
-AT2022abfc 20221206  15 X   10.00 VLA-C         13    -13 
 AT2022abfc 20221206  15 X    9.00 VLA-C         17    -18 
 AT2022abfc 20221206  15 X   11.00 VLA-C         19    -19 
-AT2022abfc 20221223  32 Ku  10.00 VLA-C         52      3 
+AT2022abfc 20221223  32 Ku  15.00 VLA-C         52      3 
 AT2022abfc 20221223  32 X   10.00 VLA-C         38      4 
 AT2022abfc 20230110  53 1   86.00 NOEMA-12A     348  -348 
-AT2022abfc 20230405 135 Ku  10.00 VLA-B         45      7 
+AT2022abfc 20230405 135 Ku  15.00 VLA-B         45      7 
 AT2022abfc 20230405 135 X   10.00 VLA-B         43      9 
 AT2022abfc 20230602 192 3    0.45 GMRT          150  -150 
 AT2022abfc 20230622 214 5    1.37 GMRT          44     12 
 AT2022abfc 20230623 215 3    0.45 GMRT          165  -165 
-AT2022abfc 20230624 216 Ku  10.00 VLA-BnA->A    27    -27 
+AT2022abfc 20230624 216 Ku  15.00 VLA-BnA->A    27    -27 
 AT2022abfc 20230624 216 S    3.00 VLA-BnA->A    26    -26 
 AT2022abfc 20230624 216 X   10.00 VLA-BnA->A    26    -26 
-AT2022abfc 20240202 438 X   10.00 VLA-C         12    -12 
 AT2022abfc 20240202 438 X    9.00 VLA-C         17    -17 
 AT2022abfc 20240202 438 X   11.00 VLA-C         19    -19 
 AT2023fhn  20230422  10 1   86.00 NOEMA-C       90    -90 
@@ -42,9 +41,9 @@ AT2023fhn  20230511  29 X    9.00 VLA-B         19    -19
 AT2023fhn  20230511  29 X   11.00 VLA-B         20    -20 
 AT2023fhn  20230615  64 X    9.00 VLA-BnA       43      6 
 AT2023fhn  20230615  64 X   11.00 VLA-BnA       53      7 
-AT2023fhn  20230709  88 Ku  10.00 VLA-A         75      7 
+AT2023fhn  20230709  88 Ku  15.00 VLA-A         75      7 
 AT2023fhn  20230709  88 X   10.00 VLA-A         118     6 
-AT2023fhn  20230825 135 Ku  10.00 VLA-A         98      9 
+AT2023fhn  20230825 135 Ku  15.00 VLA-A         98      9 
 AT2023fhn  20230825 135 X   10.00 VLA-A         143     7 
 AT2023fhn  20230910 151 4    0.65 GMRT          300  -300 
 AT2023fhn  20230910 151 5    1.37 GMRT          180  -180 
@@ -59,7 +58,7 @@ AT2023hkw  20230704  64 Ka  33.00 VLA-A         124    11
 AT2023hkw  20230704  64 Ku  10.00 VLA-A         152     7 
 AT2023hkw  20230826 117 C    6.00 VLA-A         74      7 
 AT2023hkw  20230826 117 X   10.00 VLA-A         85      8 
-AT2023hkw  20230826 117 Ku  10.00 VLA-A         56      9 
+AT2023hkw  20230826 117 Ku  15.00 VLA-A         56      9 
 AT2023hkw  20230831 122 4    0.65 GMRT          100  -100 
 AT2023hkw  20230831 122 5    1.37 GMRT          100  -100 
 AT2023hkw  20230902 124 3    0.45 GMRT          210  -210 

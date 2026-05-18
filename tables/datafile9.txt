@@ -2,7 +2,7 @@ Title: Multiwavelength Analysis of Six Luminous, Fast Blue Optical Transients
 Authors: Sevilla, Cassie et al.
 Table: Optical Photometry
 ================================================================================
-Byte-by-byte Description of file: datafile10.txt
+Byte-by-byte Description of file: datafile9.txt
 --------------------------------------------------------------------------------
    Bytes Format Units Label         Explanations
 --------------------------------------------------------------------------------

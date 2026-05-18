@@ -291,5 +291,5 @@ plt.tight_layout(pad=0.5, h_pad=0.3, w_pad=0.3)
 plt.savefig('figures/fig7_host_cutouts.pdf',
             dpi=300, bbox_inches='tight')
 plt.show()
-print("\nSaved fig_host_cutouts.pdf")
+print("\nSaved fig3_host_cutouts.pdf")
 plt.close()

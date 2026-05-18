@@ -44,7 +44,7 @@ def add_at2022cmc(ax, color = "tab:darkgrey", ms=9):
     a = pd.read_csv("data/xray/at2022cmc_nicer.dat", delimiter=' ')
     ax.plot(a['x'], a['L'], color=color, lw=1, zorder=10, ls='-.')
     a = pd.read_csv("data/xray/at2022cmc_xrt.dat", delimiter=' ')
-    ax.plot(a['x'], a['L'], color=color, lw=1, zorder=10, ls='-.', label='TDE',)
+    ax.plot(a['x'], a['L'], color=color, lw=1, zorder=10, ls='-.', label='Jetted TDE',)
 
 
 def add_cow(ax, color = "k"):
@@ -436,6 +436,6 @@ ax.set_yscale('log')
 create_xray_panel(ax)
 
 plt.tight_layout()
-plt.savefig('figures/fig3_x_collage.pdf', dpi=450)
+plt.savefig('figures/fig4_x_collage.pdf', dpi=450)
 plt.show()
 plt.close()

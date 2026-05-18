@@ -281,7 +281,7 @@ def all_fig():
     fig.text(0.54, 0.022, '$\\nu_{\\text{rest}}$ (GHz)', fontsize=10, ha='center', va='center')
     plt.tight_layout(rect=(0, 0.03, 1, 1))
     #add_power_law(ax, object, None)
-    plt.savefig('figures/fig5_radio_sed.pdf', dpi=450)
+    plt.savefig('figures/fig6_radio_sed.pdf', dpi=450)
     plt.show()
     plt.close()
 

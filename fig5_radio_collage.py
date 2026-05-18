@@ -146,7 +146,7 @@ def at2020xnd(ax, col, legend):
 
 
 def at2020mrf(ax, col, legend):
-    dt = np.array([262.9, 417.5])*2/(1+0.1353)
+    dt = np.array([262.9, 417.5])/(1+0.1353)
     zval = 0.1353
     dcm = Planck18.luminosity_distance(z=zval).cgs.value
     f = np.array([0.271, 0.049]) * 1E-3 * 1E-23 * 4 * np.pi * dcm**2 * 10E9
@@ -716,6 +716,6 @@ if __name__=="__main__":
 
     ax.legend()
     plt.tight_layout()
-    plt.savefig("figures/fig4_radio_collage.pdf", dpi=450)
+    plt.savefig("figures/fig5_radio_collage.pdf", dpi=450)
     plt.show()
     plt.close()
