@@ -9,7 +9,6 @@ import numpy as np
 
 from astropy.cosmology import Planck18
 from astropy.time import Time
-from read_table import *
 from astropy.table import Table
 
 import vals
@@ -664,17 +663,14 @@ if __name__=="__main__":
 
     bk = 'lightgrey'
 
-
+    # Show regimes for ordinary supernovae
     ax.axhline(y=1E37, c='k', ls='--', lw=0.5)
     ax.text(
             35,8E36,'Ordinary SNe',
             va='top',style='italic',color='grey',fontsize=10)
     ax.text(35,1.6E37,'Dense CSM', 
             va='top',ha='left', style='italic',color='grey',fontsize=10)
-    #ax.axhline(y=1E39, c='k', ls='--', lw=0.5)
-    #ax.text(
-    #        38,7.5E40,'Relativistic explosions', 
-    #        va='bottom', style='italic',color='grey',fontsize=10)
+
 
     sn2007bg(ax, vals.sn_col, 'SN')
     sn2003bg(ax, vals.sn_col, None)
@@ -686,7 +682,7 @@ if __name__=="__main__":
     
     sn1998bw(ax, vals.llgrb_col, 'LLGRB')
     
-    #at2018cow(ax, vals.fbot_col, None) Currently don't have radio data for this
+
     css(ax, vals.fbot_col, 'LFBOT')
 
     koala(ax, vals.fbot_col, None)

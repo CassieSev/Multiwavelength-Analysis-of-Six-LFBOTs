@@ -1,12 +1,11 @@
-import astropy.units as u
 import pandas as pd
-from astropy.cosmology import Planck18
 from astropy.time import Time
-import vals
 import numpy as np
-import matplotlib.pyplot as plt
-from fig1_photometry import objects, redshifts, b_v, get_photo, filt_list, color_list, marker_list, t0, ext_corr
+from fig1_photometry import objects, get_photo, filt_list, ext_corr
 
+"""
+This file converts the raw photometry data into a .tex table
+"""
 for i, object in enumerate(objects):
     data=pd.read_csv('data/{}/{}_photometry.csv'.format(objects[i], objects[i]), sep=',')
     times, fluxes, flux_errs, flux_limits, color, limits, filters, instruments, mjds = get_photo(data, object)

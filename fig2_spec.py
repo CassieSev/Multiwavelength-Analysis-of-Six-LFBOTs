@@ -158,7 +158,7 @@ if mosaic_plot:
 
 ax_main=fig.add_subplot(gs[0,:])
 
-# Plot the binned spectra as a line, and the unbinned as a shaded one
+# Plot the binned spectra as a line
 # Binned
 ax_main.plot(abfc_wb, 3*abfc_fb+45, label='AT2022abfc GMOS', color='blue', linewidth=0.7)
 ax_main.plot(vth_w1b, 3*vth_f1b+31, label='AT2023vth SEDM', color='purple', linewidth=0.7)
@@ -175,21 +175,6 @@ ax_main.plot(aehp_wb, 1.4*aehp_fb-71, label='AT2024aehp GMOS', color=vals.colors
 ax_main.plot(aehp_w1b, 1.4*aehp_f1b-80, label='AT2024aehp KCWI', color=vals.colors['AT2024aehp'], linewidth=0.7)
 ax_main.plot(aehp_w2b, 1.4*aehp_f2b-90, label='AT2024aehp Binospec', color=vals.colors['AT2024aehp'], linewidth=0.7)
 
-# Unbinned
-#ax_main.plot(abfc_w, 3*abfc_f+45, label=None, color='blue', alpha=0.3)
-#ax_main.plot(vth_w1, 3*vth_f1+31, label=None, alpha=0.3, color='purple')
-#ax_main.plot(vth_w, 1.8*vth_f+22, label=None, alpha=0.3, color='purple')
-#ax_main.plot(hkw_w, 2.5*hkw_f+11, label=None, color='brown', alpha=0.3)
-#ax_main.plot(fhn_w2, fhn_f2+3, label=None, color=vals.colors['AT2023fhn'], alpha=0.3)
-#ax_main.plot(fhn_w1, fhn_f1-6, label=None, color=vals.colors['AT2023fhn'], alpha=0.3)
-#ax_main.plot(fhn_w, fhn_f-17, label=None, color=vals.colors['AT2023fhn'], alpha=0.3)
-#ax_main.plot(qfm_w2,  1.3*qfm_f2-27, label=None, color=vals.colors['AT2024qfm'], alpha=0.3)
-#ax_main.plot(qfm_w, 4*qfm_f-40, label=None, color=vals.colors['AT2024qfm'], alpha=0.3)
-#ax_main.plot(qfm_w3,  3*qfm_f3-50, label=None, color=vals.colors['AT2024qfm'], alpha=0.3)
-#ax_main.plot(qfm_w1, 1.8*qfm_f1-58, label=None, color=vals.colors['AT2024qfm'], alpha=0.3)
-#ax_main.plot(aehp_w, 1.4*aehp_f-71, label=None, color=vals.colors['AT2024aehp'], alpha=0.3)
-#ax_main.plot(aehp_w1, 1.4*aehp_f1-80, label=None, color=vals.colors['AT2024aehp'], alpha=0.3)
-#ax_main.plot(aehp_w2, 1.4*aehp_f2-90, label=None, color=vals.colors['AT2024aehp'], alpha=0.3)
 
 # Make shaded green boxes
 ax_main.axvspan(3930, 3975, alpha=0.2, color='green', ymin=0.90, ymax=0.97) # Ca H&K
@@ -199,9 +184,9 @@ ax_main.axvspan(6579, 6593, alpha=0.2, color='green', ymin=0.89, ymax=0.94) # [N
 ax_main.axvspan(6579, 6593, alpha=0.2, color='green', ymin=0.02, ymax=0.83) # [N II]
 
 ax_main.axvspan(6713, 6718, alpha=0.2, color='green', ymin=0.74, ymax=0.80) # [S II] 
-ax_main.axvspan(6733, 6738, alpha=0.2, color='green', ymin=0.74, ymax=0.80)
-ax_main.axvspan(6713, 6718, alpha=0.2, color='green', ymin=0.035, ymax=0.47)
-ax_main.axvspan(6733, 6738, alpha=0.2, color='green', ymin=0.035, ymax=0.47)
+ax_main.axvspan(6733, 6738, alpha=0.2, color='green', ymin=0.74, ymax=0.80) # [S II] 
+ax_main.axvspan(6713, 6718, alpha=0.2, color='green', ymin=0.035, ymax=0.47) # [S II] 
+ax_main.axvspan(6733, 6738, alpha=0.2, color='green', ymin=0.035, ymax=0.47) # [S II] 
 ax_main.axvspan(4855, 4868, alpha=0.2, color='green', ymin=0.035, ymax=0.43) # H beta
 ax_main.axvspan(4995, 5015, alpha=0.2, color='green', ymin=0.035, ymax=0.43) # [O III]
 ax_main.axvspan(3725, 3735, alpha=0.2, color='green', ymin=0.035, ymax=0.57) # [O II]

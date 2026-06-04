@@ -9,7 +9,6 @@ from astropy.time import Time
 import sys
 sys.path.append("..")
 import vals
-from get_radio import *
 import pandas as pd
 
 

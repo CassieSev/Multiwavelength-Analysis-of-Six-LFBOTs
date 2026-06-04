@@ -229,7 +229,6 @@ def make_fig():
 
     for ax in flat_axs:
         ax.set_xlabel('$t_{\mathrm{rest}}$ (d)', fontsize=14)
-        #ax.label_outer()
     fig.legend(loc='outside lower center',  fontsize='12', ncol=5)
     fig.legend(bbox_to_anchor=(0.1, -0.1), loc='upper left')
     plt.savefig('figures/fig1_optical.pdf', dpi=450)
@@ -241,4 +240,3 @@ def make_fig():
 if __name__=='__main__':
     at2018_t0, at2018flux_app, at2018flux_abs, _ = get_at2018()
     make_fig()
-#make_app()

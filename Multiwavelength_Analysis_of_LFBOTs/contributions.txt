@@ -1,0 +1,47 @@
+- Ashley Chrimes, the Gemini spectrum of AT2023vth+host offset plot code
+- Urvashi Rao Venkata for GMRT primary beam
+- Thomas Brink for Keck/DEIMOS 23hkw spectrum
+- Ping Chen for 2024qfm photometry and 2024aehp Binospec spectrum
+- Nabeel Rehemtulla for 24qfm Binospec
+- Chang Liu for AT2023fhn GMOS spectrum reduction (and some other data analysis)
+- Yu-Jing Qin for AT2023fhn P200
+- Igor Andreoni+James Freeburn for SOAR GHTS 
+- Mary Gerhart, help discovering AT2023fhn (offset from host) (mary.gerhart@berkeley.edu)
+- Phil Evans for detailed Swift XRT help (pae9@star.le.ac.uk )
+- Kailai Wang (https://www.wis-tns.org/astronotes/astronote/2022-275) https://www.linkedin.com/in/kailaiwang
+- Ivan Altunin (https://www.wis-tns.org/astronotes/astronote/2022-275)
+- Michael Coughlin (https://www.wis-tns.org/astronotes/astronote/2023-93)
+- Maggie Li (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract)
+- Alex Filippenko (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract)
+- Thomas Brink (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract)
+- Yi Yang (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract)
+- Weikang Zheng (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract)
+- K-Ryan Hinds (https://ui.adsabs.harvard.edu/abs/2023TNSAN.114....1L/abstract, LT photometry)
+- Sophia Risin (https://scholar.google.com/citations?user=xftxNskAAAAJ&hl=en)
+- Gokul Srinivasaragavan (https://ui.adsabs.harvard.edu/abs/2024TNSAN.209....1P/abstract)
+- Jesper Sollerman (https://ui.adsabs.harvard.edu/abs/2025TNSAN...3....1S/abstract; and ALFOSC imaging)
+- Christoffer Fremling (DBSP spec)
+- Shreya Anand (LRIS spec)
+- Kaustav Das (LRIS spec)
+- Sam Rose (LRIS spec)
+- Jacob Wise (LT photometry)
+- Harsh Kumar (GIT photometry; https://hco.cfa.harvard.edu/directory/harsh-kumar/)
+- Nabeel Rehemtulla (note about BTSBot: https://fritz.science/source/ZTF23ableqsp; binospec)
+- Priscila Pessi (ALFOSC imaging)
+- Adam Miller (Binospec spectrum; https://fritz.science/share_data/ZTF24aaxhxhf)
+- Yuhan Yao (https://fritz.science/source/ZTF24abygbss)
+- Avishay Gal-Yam (Binospec run; https://fritz.science/share_data/ZTF24abygbss)
+- Poonam Chandra (VLA and uGMRT proposals)
+- G. C. Anupama (VLA and uGMRT proposals)
+- Rupak Roy (VLA and UGMRT proposals)
+- Genevieve Schroeder (VLA proposals, data analysis)
+- David Kaplan <kaplan@uwm.edu> co-i of NOEMA proposal
+- Ben Margalit (margalit@umn.edu) co-I of NOEMA proposal
+- 
+
+Steve Schulze for Prospector Help
+Nayana AJ, GMRT measurements
+
+NOT? MMT? LDT? Magellan?
+
+

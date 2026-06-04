@@ -1,0 +1,286 @@
+\documentclass[twocolumn,twocolappendix]{aastex631}
+\usepackage{amsmath}
+
+
+
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+
+\begin{document}
+
+\title{ASTRO6530 Project}
+
+
+
+\author{Jason Sevilla}
+
+
+
+
+
+\section{GMRT}
+First download data.  Use custom file to find links in the ftp, and download all files in output file using wget -i output.txt
+
+the pb correction must be done through 5.6.0-60
+
+
+
+use robust = 0.5 for briggs, mtmfs deconvolver with nterms=2
+
+\subsection{AT2021ahuo}
+
+\subsection{AT2022abfc}
+
+\subsection{AT2023fhn}
+\subsubsection{20230911}
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+
+Flag C06, C08, C13, E02
+E04 ref
+
+flag W06 high delays
+
+
+Band 5:
+field 0: primary 3C147,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+field 3: second primary 3C286
+flag 3C286
+
+Flag C06, C13, E02
+E04 ref
+flag W06 high delays
+
+\subsubsection{20231027} % between 26-27
+
+
+Band 5:
+field 0: primary 3C147,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+
+Flag S04, W05, W06
+W03 ref
+
+lots of RFI in scan 2
+
+\subsubsection{20231104} % between 04-05
+
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+
+flag W05
+C10, W06 flagged for delay
+
+E02 ref
+
+\subsubsection{20231128} 
+
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+
+flag C04, S01
+flag C03, W06 for high delays
+
+E02 ref
+
+Band 5:
+field 0: primary 3C286,
+field 1: secondary 1021+219
+field 2: AT2023fhn
+
+flag S01, C04, S03
+flag C03, W06
+
+E06 ref
+
+
+
+\subsection{AT2023hkw}
+
+\subsubsection{20231028}
+
+Band 5:
+field 0: primary 3C147,
+field 1: secondary 1035+564
+field 2: AT2023hkw
+
+flag E02, 
+flag C09
+flag C03, C04, W06
+
+W05 ref
+
+\subsubsection{20231102}
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1206+642
+field 2: AT2023hkw
+
+flag S06, W05
+flag C03, C04, W06 high delay
+ref E05
+
+\subsubsection{20231103}
+
+Band 3:
+field 0: primary 3C147,
+field 1: secondary 1206+642
+field 2: AT2023hkw
+
+flag W05
+flag C03, C04, W06 high delay
+ref E04
+
+\subsubsection{20231128}
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1206+642
+field 2: AT2023hkw
+
+flag C04, S01,
+flag C03, W06 high delay
+flag S06 
+ref E03, 
+
+Band 5:
+field 0: primary 3C147,
+field 1: secondary 1035+564
+field 2: AT2023hkw
+
+flag C03, C04, S01
+ref S06
+
+\subsection{AT2023vth}
+\subsubsection{20231217}
+field 0: primary 3C286,
+field 1: secondary 1801+138
+field 2: AT2023vth
+
+Band 4:
+RFI in C02 antenna, refant C02 or C00
+S01 low amplitude for some secondary calibrator scans, flagged 
+c03, c04, w06 high delays, flagged
+
+flag c01, w01 from low gain amp
+
+55000 uvwave, cell size of 0.6 arcsec, pick 40 pixels, 
+
+Band 5:
+refant S02
+c03, c04, w06 high delays, flagged
+
+\subsubsection{20240120}
+Band 4:
+flag C01, S03, S04, S06, with low amp in primary scan
+
+field 0: primary 3C286,
+field 1: secondary 1801+138
+field 2: AT2023vth
+
+refant:C00
+
+C02, C03, C04, W06 with high delays, flagged
+
+\subsubsection{20240122}
+
+Band 5:
+field 0: primary 3C48,
+field 1: secondary 1801+138
+field 2: AT2023vth
+
+refant: E02
+
+flag S03 low amp
+C03, C04, E04, W06 with high delays, flagged
+
+
+\subsubsection{20240222}
+
+Band 4:
+field 0: primary 3C286,
+field 1: secondary 1801+138
+field 2: AT2023vth
+
+refant: C00
+
+C03, C04, W06 with high delays, flagged
+
+
+\subsubsection{20240224}
+
+Band 5:
+field 0: primary 3C286,
+field 1: secondary 1801+138
+field 2: AT2023vth
+
+refant: E04
+
+flag W06 low amp
+flag C03, C04 high delay
+%\begin{figure}[!h]\label{fig:beam}
+% \centering
+%  \includegraphics[width=\linewidth]{figures/beam.png}
+%\caption{Diagram from \citet{rybicki} showing the beaming of %synchrotron radiation as the electron gyrates in a magnetic %field.  The beaming is into a half-opening angle of 1/$\gamma$.  %The beaming is visible to a faraway observer for an angle %$2/\gamma$ of the particle's circular path.}
+%\end{figure}
+
+%\begin{deluxetable*}{cccccc}
+%
+%\setlength{\tabcolsep}{0.25em}
+%\tablewidth{0.94\textwidth}
+%\tabletypesize{\footnotesize}
+%\tablewidth{0pt}
+%\tablecaption{Welch's t-test p-values for each set of parameters and %each $T_{eff}$ bin \label{tab:table1}}
+%\tablecolumns{6}
+%\tablehead{
+%\colhead{$T_{eff}$ bin}
+%& \colhead{FUV/NUV ratio range/mean} & \colhead{FUV standard %error/mean}
+%& \colhead{NUV standard error/mean} & \colhead{Fractional FUV %Luminosity}
+%& \colhead{Fractional NUV Luminosity} \\
+%\colhead{(Kelvin)}
+%& \colhead{FUV/NUV ratio range/mean} & \colhead{FUV standard %error/mean}
+%& \colhead{NUV standard error/mean} & \colhead{Fractional FUV %Luminosity}
+%& \colhead{Fractional NUV Luminosity} 
+%}
+%\startdata
+%\vspace{0.2cm}  4800-5400 K & 0.64 & 0.98 & 4e-10 & 1e-05 & 1e-05 \\ %\vspace{0.2cm}
+%4800-5400 K & 0.64 & 0.98 & 4e-10 & 1e-05 & 1e-05 \\
+%4800-5400 K & 0.64 & 0.98 & 4e-10 & 1e-05 & 1e-05 \\
+%\enddata
+%
+%\vspace{2.5mm}
+       
+%\tablecomments{F}
+%\end{deluxetable*}
+
+
+\bibliography{mybib}
+\bibliographystyle{aasjournal}
+
+%% This command is needed to show the entire author+affiliation list when
+%% the collaboration and author truncation commands are used.  It has to
+%% go at the end of the manuscript.
+%\allauthors
+
+%% Include this line if you are using the \added, \replaced, \deleted
+%% commands to see a summary list of all changes at the end of the article.
+%\listofchanges
+
+\end{document}
+

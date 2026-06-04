@@ -1,4 +1,4 @@
-wavelength flux fluxe
+wavelength flux unc
 3258.6219   nan   nan
 3260.3088   nan   nan
 3261.9957   nan   nan

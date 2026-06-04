@@ -100,41 +100,6 @@ lfbot_absmags = app_to_abs_mag(lfbot_appmags, lfbot_zs, unitless=True)
 
 
 fig, ax = plt.subplots(1,1, figsize=(6,4), layout='tight')
-
-def sim_pop(population, obs_absmags, obs_masses, n, ax):
-    """
-    Simulate n samples from a given population, with each item in the sample having an
-    absolute magnitude limit to reflect our observational bias
-
-    `population`: Pandas table containing the population we draw from.  Has columns for the absolute
-        magnitude of each galaxy and the log Mass/M_sun
-    
-    `obs_absmags`: A list with a length equal to the size of each sample, where each entry specifies the
-        minimum absolute magnitude for that draw
-
-    `obs_masses`: The actual log Mass/M_sun for the observed LFBOTs
-
-    `n`: Number of samples to be drawn.  Each sample's size is equal to the number of observed LFBOTs
-    (length of obs_absmags).
-    """
-    x_array=np.linspace(6, 12.3, 50)
-    all_samples = np.empty(shape=(1, 50))
-    for _ in range(n):
-        sample_mass=[]
-        for _, absmag in enumerate(obs_absmags):
-            pop_slice = population.loc[(population['absmag']<=absmag)]
-            sample_mass.append(np.random.choice(pop_slice['logmass']))
-        sample_kde = gaussian_kde(sample_mass).evaluate(x_array)
-        all_samples=np.append(all_samples, np.array([sample_kde]), axis=0)
-        ax.plot(x_array, sample_kde, color='lightgray', alpha=0.2)
-    all_samples=all_samples[1:, :]
-    sample_percentiles = np.percentile(all_samples, q=[16, 50, 84], axis=0)
-
-    obs_kde = gaussian_kde(obs_masses).evaluate(x_array)
-    ax.plot(x_array, sample_percentiles[0], color='red', linewidth=1.5, ls='dotted')
-    ax.plot(x_array, sample_percentiles[1], color='red', linewidth=2, label='Median')
-    ax.plot(x_array, sample_percentiles[2], color='red', linewidth=1.5, ls='dotted')
-    ax.plot(x_array, obs_kde, color='black', linewidth=4, label='Observed')
     
 
 def sim_single_pop(population, obs_absmags, obs_masses, ax):
@@ -187,69 +152,7 @@ def sim_single_pop_cdf(population, obs_absmags, obs_masses, ax):
     ax.set_yticks([0, 0.2,0.4, 0.6, 0.8, 1])
 
 
-
-if population=='ccsne':
-    sim_pop(ccsne_galaxy_popall, lfbot_absmags, lfbot_masses, 1000, ax)
-    plt.savefig('figures/host_galaxy_sim_ccsne.png', dpi=450)
-    plt.show()
-elif population=='lgrb':
-    sim_pop(lgrb_galaxy_popall, lfbot_absmags, lfbot_masses, 1000, ax)
-    plt.savefig('figures/host_galaxy_sim_lgrb.png', dpi=450)
-    plt.show()
-elif population=='slsne_all':
-    sim_pop(slsne_galaxy_pop_all, lfbot_absmags, lfbot_masses, 1000, ax)
-    ax.set_title('All SLSNE', fontsize=19)
-    plt.savefig('figures/host_galaxy_sim_slsne_all.png', dpi=450)
-    plt.show()
-elif population=='slsne_i':
-    sim_pop(slsne_galaxy_pop_1, lfbot_absmags, lfbot_masses, 1000, ax)
-    ax.set_title('SLSNE-I', fontsize=19)
-    plt.savefig('figures/host_galaxy_sim_slsne_i.png', dpi=450)
-    plt.show()
-elif population=='slsne_ii':
-    sim_pop(slsne_galaxy_pop_2, lfbot_absmags, lfbot_masses, 1000, ax)
-    ax.set_title('SLSNE-II', fontsize=19)
-    plt.savefig('figures/host_galaxy_sim_slsne_ii.png', dpi=450)
-    plt.show()
-elif population=='final':
-    plt.close()
-    fig, axs = plt.subplots(1,2, figsize=(6,4), layout='constrained')
-    flat_axs=axs.flatten()
-    sim_pop(slsne_galaxy_pop_all, lfbot_absmags, lfbot_masses, 1000, flat_axs[1])
-    sim_pop(ccsne_galaxy_popall, lfbot_absmags, lfbot_masses, 1000, flat_axs[0])
-    flat_axs[0].set_title('CCSNe', fontsize=15)
-    flat_axs[0].legend(fontsize='9', loc='upper left')
-    flat_axs[1].set_title('SLSNe', fontsize=15)
-    for ax in flat_axs:
-        ax.tick_params(axis='both', labelsize=11)
-        ax.set_yticks([])
-    fig.text(0.5, 0.04, 'Host Galaxy $\log \left( M/M_{\odot} \\right)$', ha='center', fontsize=20)
-    plt.tight_layout(rect=(0, 0.08, 1, 1))
-    plt.savefig('figures/host_galaxy_sim.png', dpi=450)
-    plt.show()
-elif population=='final_all':
-    plt.close()
-    fig, axs = plt.subplots(1,4, figsize=(12,3), layout='constrained')
-    flat_axs=axs.flatten()
-    sim_pop(slsne_galaxy_pop_all, lfbot_absmags, lfbot_masses, 1000, flat_axs[1]) 
-    sim_pop(ccsne_galaxy_popall, lfbot_absmags, lfbot_masses, 1000, flat_axs[0])
-    sim_pop(slsne_galaxy_pop_1, lfbot_absmags, lfbot_masses, 1000, flat_axs[2])
-    sim_pop(slsne_galaxy_pop_2, lfbot_absmags, lfbot_masses, 1000, flat_axs[3])
-    flat_axs[0].legend(fontsize='9', loc='upper left')
-    flat_axs[0].text(0.95, 0.91, 'CCSNe',     fontsize=12, ha='right', va='center', transform=flat_axs[0].transAxes)
-    flat_axs[1].text(0.95, 0.91, 'SLSNe',     fontsize=12, ha='right', va='center', transform=flat_axs[1].transAxes)
-    flat_axs[2].text(0.95, 0.91, 'SLSNe-I',   fontsize=12, ha='right', va='center', transform=flat_axs[2].transAxes)
-    flat_axs[3].text(0.95, 0.91, 'SLSNe-II',  fontsize=12, ha='right', va='center', transform=flat_axs[3].transAxes)
-    for ax in flat_axs:
-        ax.tick_params(axis='both', labelsize=10)
-        ax.set_ylim([0, 1.07])
-        ax.label_outer()
-        ax.set_yticks([])
-    fig.text(0.5, 0.04, 'Host Galaxy $\log \left( M/M_{\odot} \\right)$', ha='center', fontsize=14)
-    fig.text(0.022, 0.5, '# galaxies per log mass', ha='center', fontsize=14, rotation='vertical', va='center')
-    plt.tight_layout(rect=(0.03, 0.05, 1, 1))
-    #plt.show()
-elif population=='single_all':
+if population=='single_all':
     plt.close()
     fig, axs = plt.subplots(2,4, figsize=(12,6.5), layout='constrained')
     flat_axs=axs.flatten()
