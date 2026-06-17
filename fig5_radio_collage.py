@@ -202,13 +202,10 @@ def at2022abfc(ax, col, legend):
 
 def at2023fhn(ax, col, legend):
     """ AT 2023fhn """
-    # First epoch was non-detection
-    # 23 June 2023: 42 uJy at 10 GHz; 74 days
-    # 9 July 2023: 118 uJy at 10 GHz; 90 days
-    # 25 August 2023: 143 uJy at 10 GHz; 140 days
     zval = 0.24
     dt = np.array([12, 31, 74, 90, 140, 442]) / (1+zval)
     dcm = Planck18.luminosity_distance(z=zval).cgs.value
+    # Convert to luminosity
     f = np.array([3*0.018, 3*0.005, 0.042, 0.118, 0.143,0.033]) * \
             1E-3 * 1E-23 * 4 * np.pi * dcm**2 * 10E9
     ax.scatter(dt, f, c=col, marker=vals.markers['AT2023fhn'], s=70, zorder=100)
@@ -228,7 +225,7 @@ def at2023fhn(ax, col, legend):
     ax.arrow(x, y, 0, -y/2, length_includes_head=True, 
              head_width=x/7, head_length=y/8, color=col, zorder=200)
 
-    # Upper limit from my program...
+    # Upper limit from Anna's program...
     x = 31 / (1+zval)
     y = 3*5 * 1E-6 * 1E-23 * 4 * np.pi * dcm**2 * 10E9
     ax.scatter(x, y, edgecolor=col, 
@@ -262,6 +259,7 @@ def at2023vth(ax, col, legend):
     x = np.array([30, 41, 87, 118, 204, 338, 402])/(1+z)
     dcm = Planck18.luminosity_distance(z).cgs.value
     y_ujy = np.array([145, 399, 1290, 769, 56, 12, 8])
+    # Convert flux (uJy) to luminosity
     y = y_ujy * 1E-6 * 1E-23 * 4 * np.pi * dcm**2 * 10E9
     ax.scatter(x[:-2], y[:-2], fc=col, ec='black', marker=vals.markers['AT2023vth'], s=30, zorder=100)
      # Plot upper limits with arrows
@@ -314,7 +312,7 @@ def at2018cow(ax, col, legend):
     eflux_sys = np.array([0.1*f for f in flux])
     eflux_form = np.array(
             [float(val.split("pm")[1][0:-1]) for val in flux_raw])
-    eflux = np.sqrt(eflux_sys**2 + eflux_form**2)
+
     choose = freq == 9
 
     # add the Margutti point and the Bietenholz point
@@ -461,7 +459,7 @@ def grb130427A(ax, col, legend):
     f = np.array([2570, 1820, 607, 374, 385, 332, 243, 109, 91]) * 1E-3
 
     lum = plot_line(ax, d, t/(1+0.34), freq*f, 'GRB130427A', 'GRB', col, legend)
-    #ax.text(3, 5E39, 'GRB130427A', ha='left', color='grey')
+
 
 
 def sn2007bg(ax, col, legend):
@@ -521,9 +519,7 @@ def sn2009bb(ax, col, legend):
         7.714, 8.482, 6.824, 6.327, 3.294, 4.204, 3.203, 2.392,
         1.903, 1.032, 1.084])
     lum = plot_line(ax, d, t, nu*flux, 'SN2009bb', 'SN', col, legend) #Changed from Rel SN.
-    #ax.text(t[0]/1.05, lum[0], '2009bb', fontsize=11,
-    #        verticalalignment='center',
-    #        horizontalalignment='right')
+
 
 
 def sn1998bw(ax, col, legend):

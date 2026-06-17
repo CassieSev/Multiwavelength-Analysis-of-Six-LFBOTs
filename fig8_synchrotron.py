@@ -82,7 +82,7 @@ def get_shock(nu_ghz, f_jansky, t_days, redshift, object=None, limit=False):
 
 def bpl_smooth_a1(x, xb, Fb, a2, a1=5/2):
     """
-    Define the smoothed broken pwoer law equation, with peak at (xb, Fb) and power law slopes of a2, a1.
+    Define the smoothed broken power law equation, with peak at (xb, Fb) and power law slopes of a2, a1.
     `x` is the input variable
     """
     s = 1; sig = np.sign(a1-a2)

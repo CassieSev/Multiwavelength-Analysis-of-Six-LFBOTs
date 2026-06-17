@@ -31,7 +31,7 @@ marker_list=['s', 'o', 'D', 'P', 'X', 's', 'o', 'D', 'P' ]
 redshifts=vals.redshifts
 
 
-def app_to_abs_mag(apparent, redshift, kcorrection=False, unitless=False):
+def app_to_abs_mag(apparent, redshift, kcorrection=True, unitless=False):
     """
     Converts apparent to absolute magnitude using the Planck18 cosmology.
     Args:
@@ -41,7 +41,7 @@ def app_to_abs_mag(apparent, redshift, kcorrection=False, unitless=False):
             using Eq. 2 from Whitesides et al (2017) ApJ 851 107
     """
     if kcorrection:
-        apparent += 2.5*np.log10(1+redshift)
+        apparent += 2.5*np.log10(1+np.array(redshift))
     if unitless:
         return (apparent*u.mag-Planck18.distmod(redshift))/u.mag
     return apparent*u.mag-Planck18.distmod(redshift)

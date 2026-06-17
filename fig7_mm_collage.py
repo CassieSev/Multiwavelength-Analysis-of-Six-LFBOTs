@@ -7,7 +7,7 @@ import sys
 from astropy.cosmology import Planck18
 from astropy.time import Time
 import sys
-sys.path.append("..")
+#sys.path.append("..")
 import vals
 import pandas as pd
 

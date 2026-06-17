@@ -99,8 +99,8 @@ def fix_spectrum(wavelength, flux, fluxe, redshift, bin_size=3, scale=1, limits=
 
 # Bin all the spectra
 abfc_wb, abfc_fb, abfc_w, abfc_f = fix_spectrum(data_2022abfc['wavelength'], data_2022abfc['flux'], data_2022abfc['unc'], 'AT2022abfc', var=True)
-fhn_w1b, fhn_f1b, fhn_w1, fhn_f1 = fix_spectrum(data_2023fhn_p200['wavelength'], data_2023fhn_p200['flux'], data_2023fhn_p200['fluxe'], 'AT2023fhn', scale=1.002) #P200 spectrum
-fhn_w2b, fhn_f2b, fhn_w2, fhn_f2 = fix_spectrum(data_2023fhn_gmos['wavelength'], data_2023fhn_gmos['flux'], data_2023fhn_gmos['fluxe'], 'AT2023fhn', scale=1.002) #Gemini, featureless
+fhn_w1b, fhn_f1b, fhn_w1, fhn_f1 = fix_spectrum(data_2023fhn_p200['wavelength'], data_2023fhn_p200['flux'], data_2023fhn_p200['unc'], 'AT2023fhn', scale=1.002) #P200 spectrum
+fhn_w2b, fhn_f2b, fhn_w2, fhn_f2 = fix_spectrum(data_2023fhn_gmos['wavelength'], data_2023fhn_gmos['flux'], data_2023fhn_gmos['unc'], 'AT2023fhn', scale=1.002) #Gemini, featureless
 fhn_wb, fhn_fb, fhn_w, fhn_f = fix_spectrum(data_2023fhn_lris['wavelength'], data_2023fhn_lris['flux'], data_2023fhn_lris['unc'], 'AT2023fhn', scale=1.002)
 hkw_wb, hkw_fb, hkw_w, hkw_f=fix_spectrum(data_2023hkw['wavelength'], data_2023hkw['flux'], data_2023hkw['unc'], 'AT2023hkw')
 vth_wb, vth_fb, vth_w, vth_f=fix_spectrum(data_2023vth['wavelength'], data_2023vth['flux'], data_2023vth['unc'], 'AT2023vth', var=True) # for 2 only
@@ -112,7 +112,7 @@ qfm_w2b, qfm_f2b, qfm_w2, qfm_f2=fix_spectrum(data_2024qfm_gmos['wavelength'], d
 qfm_w3b, qfm_f3b, qfm_w3, qfm_f3=fix_spectrum(data_2024qfm_binospec['wavelength'], data_2024qfm_binospec['flux'], data_2024qfm_binospec['unc'], 'AT2024qfm', var=False)
 
 aehp_wb, aehp_fb, aehp_w, aehp_f=fix_spectrum(data_2024aehp['wavelength'], data_2024aehp['flux'],data_2024aehp['unc'], 'AT2024aehp', var=True, scale=1.0013)
-aehp_w1b, aehp_f1b, aehp_w1, aehp_f1=fix_spectrum(data_2024aehp_kcwi['wavelength'], data_2024aehp_kcwi['flux'],data_2024aehp_kcwi['err'], 'AT2024aehp', var=False)
+aehp_w1b, aehp_f1b, aehp_w1, aehp_f1=fix_spectrum(data_2024aehp_kcwi['wavelength'], data_2024aehp_kcwi['flux'],data_2024aehp_kcwi['unc'], 'AT2024aehp', var=False)
 aehp_w2b, aehp_f2b, aehp_w2, aehp_f2=fix_spectrum(data_2024aehp_binospec['wavelength'], data_2024aehp_binospec['flux'],data_2024aehp_binospec['unc'], 'AT2024aehp', var=False)
 
 fig=plt.figure(figsize=(6,8))

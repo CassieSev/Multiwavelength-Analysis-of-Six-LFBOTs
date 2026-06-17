@@ -22,8 +22,11 @@ host_coords={'AT2024aehp': (125.281102, 28.739465), 'AT2023fhn':(152.015585, 21.
              'AT2024qfm': (350.347507, 11.94241), 'AT2023vth':(269.14376351	, 8.04324255),
              'AT2020xnd': (335.008504, -2.840442)} # From LS DR10, or PS1 DR2 for AT2023vth
 host_coords_fhn={'AT2023fhn': ('10:08:03.78', '21:04:22.5')} # For AT2023fhn, using Ashley Chrimes' localization
+
+# Calculating new offsets
 c1 = SkyCoord(fbot_coords[obj_name][0],  fbot_coords[obj_name][1], unit=(u.hourangle, u.deg), frame='fk5')
 c2 = SkyCoord(host_coords[obj_name][0]*u.deg, host_coords[obj_name][1]*u.deg, frame='fk5')  
+# For AT2023fhn, using HST data from Chrimes et al.
 #c2 = SkyCoord(host_coords_fhn[obj_name][0],  host_coords_fhn[obj_name][1], unit=(u.hourangle, u.deg), frame='fk5')
 print(c1.separation(c2).arcsecond)
 print(Planck18.angular_diameter_distance(z=vals.redshifts[obj_name])*c1.separation(c2).rad)
@@ -148,21 +151,13 @@ if __name__ == '__main__':
     plt.ylim([0,1])
     plt.xlim([0.05,100])
     plt.xscale('log')
-    #plt.yticks([])
-    #plt.xticks([])  
+
     plt.xlabel(r'Offset (kpc)',fontsize=14)  
     plt.ylabel('Cumulative Fraction',fontsize=14)  
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.legend(prop={'size':12})    
-    
-    #spiral
-    #plt.plot([16.51,16.51],[0,1],'-k',linewidth=3) #555
-    #plt.plot([16.55,16.55],[0,1],'--k',linewidth=3) #814
 
-    #satellite
-    #plt.plot([5.35,5.35],[0,1],'-k',linewidth=1) #555
-    #plt.plot([5.34,5.34],[0,1],'--k',linewidth=1) #814
 plt.tight_layout()
 plt.savefig('figures/fig9_host_offset.pdf', dpi=450)
 plt.show()

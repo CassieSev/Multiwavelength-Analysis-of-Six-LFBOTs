@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import itertools
 import matplotlib as mpl
 from matplotlib.colors import LogNorm
-from scipy.optimize import curve_fit
 from astropy.cosmology import Planck18
-from sed_fit import bpl_smooth_a1
+from fig8_synchrotron import bpl_smooth_a1
+
 marker_list = itertools.cycle(('s', 'o', '*', 'D', 'H'))
 
 plasma = mpl.colormaps['plasma'].resampled(20)
@@ -100,11 +100,8 @@ def make_sed(object, arrays=None, ax=None):
     norm = LogNorm(vmin=11, vmax=380)
     hide_nondets=False
     # Basic Plot for all arrays
-    if arrays == None:
-        for t in times:
-            df_plot=raw_df.loc[(raw_df['object']==object)&(raw_df['t_obs']==t)]
     # Advanced plot for final figure, filtering on arrays
-    elif object=='AT2023fhn' or object=='AT2023vth' or object=='AT2024aehp':
+    if object=='AT2023fhn' or object=='AT2023vth' or object=='AT2024aehp':
         bin_cond=bins[object]
         for i in range(len(bin_cond)-1):
             label=custom_labels[object][i]
@@ -113,45 +110,24 @@ def make_sed(object, arrays=None, ax=None):
             if default_marker=='*' or default_marker=='1': marker_params[1] = 5
             if object=='AT2023fhn' and i == 6: hide_nondets=True
             df_plot=raw_df.loc[(raw_df['object']==object)&(raw_df['t_obs']>=bin_cond[i])&(raw_df['t_obs']<=bin_cond[i+1])&(raw_df['array'].isin(arrays))].sort_values(by=['freq_corr'])
-            print(df_plot)
+
             default_color=plasma(norm(float(np.average(df_plot['t_obs'].astype(float)))))
             plot_sed(df_plot, default_color, marker_params, label=label, ax=ax, hide_nondets=hide_nondets)
             add_power_law_fit(ax, object, float(np.average([bin_cond[i:i+2]])), colornorm=norm, color=default_color)
     else:
-        prev_index=0
         for t in times:
-            # default color is based on a plasma colormap ranging from minimum to maximum t
-            if object=='AT2023fhn' or object=='AT2023vth' or object=='AT2024aehp':
-                # Find which bin time falls into
-                bin_cond=bins[object]
-                index=np.argwhere(bin_cond-t>0)[0][0]
-                # Set labels and colors manually
-                default_color=plasma(norm(float(np.average([bin_cond[index-1:index+1]]))))
-                #default_marker=custom_markers[object][index]
-                #raw_df.loc[(raw_df['object']==object)&(raw_df['t_obs']==t), 't_obs'] = float(np.average([bin_cond[index-1:index+1]]))
-                #t=float(np.average([bin_cond[index-1:index+1]]))
-                # if in the same bin, do not make new label
-                #if index != prev_index: label=custom_labels[object][index]
-                #else: label=None
-
-                prev_index=index
-            else:
-                default_color=plasma(norm(float(t)))
-                # Increment default marker to be next from a list
-                default_marker=next(marker_list)
-                label='{}d'.format(np.int32(np.round(t,0)))
+            default_color=plasma(norm(float(t)))
+            # Increment default marker to be next from a list
+            default_marker=next(marker_list)
+            label='{}d'.format(np.int32(np.round(t,0)))
             marker_params=[default_marker, 3, 1]
             if default_marker=='*' or default_marker=='1': marker_params[1] = 5
             # Select rows that have the right object, right arrays, at correct t_obs, and is our new data
             df_plot=raw_df.loc[(raw_df['object']==object)&(raw_df['t_obs']==t)&(raw_df['array'].isin(arrays))].sort_values(by=['freq_corr'])
             # First, plot our data
             plot_sed(df_plot, default_color, marker_params, label=label, ax=ax, hide_nondets=hide_nondets)
-            # Then, plot any data from other proposals, if it exists, under different color and marker
-            #df_plot=raw_df.loc[(raw_df['object']==object)&(raw_df['t_obs']==t)&(raw_df['array'].isin(arrays))&(raw_df['obs']=='chrimes')].sort_values(by=['freq_corr'])
-            #plot_sed(df_plot, default_color, ['o', 5, 0.6], label=None, ax=ax)
-            add_power_law_fit(ax, object, t, colornorm=norm)
 
-            #add_power_law(ax, object, t)
+            add_power_law_fit(ax, object, t, colornorm=norm)
     add_outside_data(ax, object, colornorm=norm)
                 
 
@@ -237,20 +213,14 @@ def add_indices(ax, object):
         ax.text(0.4, 0.5, 'F$\\sim\\nu^{-1.08}$', fontsize=6, transform=ax.transAxes, rotation=-35)
     elif object == 'AT2024aehp':
         ax.text(0.44, 0.58, 'F$\\sim\\nu^{1.14}$', fontsize=6, transform=ax.transAxes, rotation=43)
-    
 
 
-def calc_power_law(df, conditions):
-    x = np.array(df.loc[conditions, 'freq_corr'])
-    y=np.array(df.loc[conditions, 'uJy'].astype(float))
-    def linear(x, m, b):
-        return m*x+b
-
-    
-
-raw_df = pd.read_csv('data/new_radio_data.txt')
-raw_df['freq_corr']=fix_freq(raw_df['freq'], raw_df['object'], raw_df['frame'])
 def all_fig():
+    # Load Data
+    raw_df = pd.read_csv('data/new_radio_data.txt')
+    # Convert to rest frame, get a single frequency point for each entry
+    raw_df['freq_corr']=fix_freq(raw_df['freq'], raw_df['object'], raw_df['frame'])
+
     fig, axs = plt.subplots(3, 2, figsize=(6,6), sharex=True, sharey=True)
     flat_axs=axs.flatten()
     for i,ax in enumerate(flat_axs):
@@ -264,9 +234,9 @@ def all_fig():
         else: ax.legend(loc=loc, prop={'size':6}, labelspacing=0.1)
         #add_indices(ax, objects[i])
 
-        #ax.set_title('{}'.format(objects[i]), fontsize=12)
+
         ax.text(0.98, 0.95, '{}'.format(objects[i]), fontsize=10, ha='right', va='top', transform=ax.transAxes)
-        #ax.set_xlabel('Rest Frame Frequency (GHz)', fontsize=16)
+
         if i == 2:
             ax.set_ylabel('$F_\\nu$ ($\mu$Jy)', fontsize=10)
         ax.set_xscale('log')
