@@ -1,4 +1,3 @@
-import matplotlib
 from matplotlib import rcParams
 rcParams['font.family'] = 'sans-serif'
 import matplotlib.pyplot as plt
@@ -31,39 +30,6 @@ def ptf11qcj(ax, col, legend):
     nu_l = l*nu
     ax.plot(dt, nu_l, c=col, ls='--', zorder=10, label=legend)
     #ax.scatter(dt, l/1.2, c=col, marker='>', zorder=10)
-    
-
-
-def sn2008d(ax, col, legend):
-    """ SN 2008D
-    Soderberg et al. 2008
-    """
-    d = 29.9 * 3.086E24
-
-    # HIGH FREQUENCY (Carma)
-    dt = np.array([4.94, 6.84])/1.00606547
-    f = np.array([3.2, 0.6])
-    ef = [0.7, 0.3]
-    nu = 95E9
-
-    l = f*1E-3*1E-23*4*np.pi*d**2
-    nu_l = l*nu
-    #ax.scatter(dt, l/1.2, c=col, marker='>')
-    ax.plot(dt, nu_l, c=col, ls='--', label=legend)
-
-
-
-
-def sn2020oi(ax, col, legend):
-    """ Maeda et al. 2021 """
-    d = 15.5 * 3.086E24
-    dt = np.array([5.4, 8.4, 18.3, 51.3])/1.0029274
-    fnu = np.array([1.3, 1.22, 0.196, 0.115])
-    l = fnu*1E-3*1E-23*4*np.pi*d**2
-    nu_l = l*100e9
-    #ax.scatter(dt, l, color=col, marker='>')
-    ax.plot(dt, nu_l, c=col, ls='--', label=None)
-
 
 
 
@@ -155,28 +121,6 @@ def j1644(ax, col, legend):
 
 
 
-def igr(ax, col, legend):
-    """ IGR J12580+0134
-    They have data from Planck at 100 GHz
-    Discovered by INTEGRAL (https://www.astronomerstelegram.org/?read=3108)
-
-    First detection: 2011 Jan 2-11
-    Last non-detection: 2010 Dec 30 to 2011 Jan 2
-
-    So... the dt is something like 1 day to 12 days?
-    """
-    d = 17*3.086E24 # Mpc to cm
-
-    t = 10 # estimate
-    freq = 100E9
-    lum = 640*1E-3*1E-23*4*np.pi*d**2
-    nu_lum = lum*100e9
-    #ax.scatter(t, nu_lum, marker='o',s=25,
-    #        facecolor='white', edgecolor=col, label=legend,zorder=100)
-    ax.plot(t, nu_lum, c=col, label=legend, lw=1,zorder=0, ls='-.')
-
-
-
 def sn1998bw(ax, col, legend):
     """ SN 1998bw
     
@@ -194,7 +138,7 @@ def sn1998bw(ax, col, legend):
 
 
 def sn2017iuk(ax, col, legend):
-    """ SN 2017iuk
+    """ SN 2017iuk Perley et al. 2017 AstroNote
     """
     d = Planck18.luminosity_distance(z=0.0368).cgs.value
     nu = 92E9 # Band 3
@@ -249,27 +193,6 @@ def at2022tsd(ax, col, legend):
             dt, nu_lum, facecolor=col, marker='D', 
             label=legend, edgecolor='k', s=10, zorder=3, alpha=0.3)
     ax.plot(dt, nu_lum, c=col, ls='-', lw=2, label=None, zorder=3, alpha=0.3)
-
-
-def at2022cmc(ax, col, legend):
-    dcm = Planck18.luminosity_distance(z=1.193).cgs.value
-    t0 = Time(59621.4, format='mjd')
-    dt = Time(
-            np.array(['2022-02-18','2022-02-20', '2022-02-22', '2022-02-24',
-             '2022-02-25', '2022-02-26', '2022-02-28', '2022-03-02',
-             '2022-03-06']), format='isot')-t0
-    dt = dt.value/(1+1.193)
-
-    fnu = np.array([9.1, 7.4, 7.9, 7.4, 6.6, 4.65, 5.0, 4.0, 3.0])
-    efnu = np.array([0.9]*len(fnu))
-    lnu = fnu*1E-3*1E-23*4*np.pi*dcm**2
-    nu_lnu = lnu*230e9
-    #ax.scatter(dt, nu_lnu, marker='o', edgecolor=col, facecolor='white',zorder=100,
-    #           s=25)
-    ax.plot(dt,nu_lnu,c=col,zorder=0, ls='-.', lw=1)
-    #ax.text(
-    #        dt[-1]*1.01, lnu[0], '22cmc (230 GHz)', fontsize=10, 
-    #        ha='left', va='center', color='red', fontweight='bold')
 
 
 def at2024wpp(ax, col, legend):
@@ -373,14 +296,13 @@ def run(ax):
     well on the plot."""
 
 
-    #sn2020oi(ax, vals.sn_col, 'SNe')
+  
     ptf11qcj(ax, vals.sn_col, 'SN')
-    #sn2008d(ax, vals.sn_col, 'SNe')
+
 
     # Category: TDEs
     j1644(ax, vals.tde_col, legend='TDE')
-    #igr(ax, vals.tde_col, legend=None)
-    #at2022cmc(ax, vals.tde_col, legend=None)
+
 
     # First category: long-duration GRBs
     grb130427A(ax, vals.lgrb_col, legend='LGRB')
