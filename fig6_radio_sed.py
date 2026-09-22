@@ -216,11 +216,12 @@ def add_indices(ax, object):
 
 
 def all_fig():
+    global raw_df
     # Load Data
     raw_df = pd.read_csv('data/new_radio_data.txt')
     # Convert to rest frame, get a single frequency point for each entry
     raw_df['freq_corr']=fix_freq(raw_df['freq'], raw_df['object'], raw_df['frame'])
-
+    
     fig, axs = plt.subplots(3, 2, figsize=(6,6), sharex=True, sharey=True)
     flat_axs=axs.flatten()
     for i,ax in enumerate(flat_axs):

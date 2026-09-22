@@ -1,6 +1,0 @@
-2023fhn: Dan Perley publishing VLT photometry, for now include LT, ZTF run forced phot
-2023vth: Just ZTF and forced phot
-2022abfc, only ZTF plus run forced phot
-2023hkw: ZTF, GIT, include everything
-
-Just get ZTF forced phot, do not duplicate with regular

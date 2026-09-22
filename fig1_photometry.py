@@ -47,7 +47,7 @@ def app_to_abs_mag(apparent, redshift, kcorrection=True, unitless=False):
     return apparent*u.mag-Planck18.distmod(redshift)
 
 
-def abs_to_app_mag(absolute, redshift, kcorrection=False, unitless=False):
+def abs_to_app_mag(absolute, redshift, kcorrection=True, unitless=False):
     """
     Converts absolute to apparent magnitude using the Planck18 cosmology.
     Args:

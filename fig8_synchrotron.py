@@ -590,7 +590,7 @@ for i,vel in enumerate(np.array([0.2, 0.4, 1.0])):
     ax[0].text(coef[i]*np.power(2.8e30*1e-26,9/19)/vel, 2.1e30, "$v={}c$".format(vel) ,verticalalignment='center',
         fontsize=8, horizontalalignment='center', zorder=3)
 # Plot lines of constant mass loss rate
-for m_dot in np.array([0.01, 1, 100]):
+for i,m_dot in enumerate(np.array([0.01, 1, 100])):
     ax[0].plot(x, (1.2e27)*np.power(m_dot/3/2.5e-5, -19/4) * x **(19/2), color='lightgrey', ls='dotted', lw=3)
     if m_dot>=1: m_dot=int(m_dot)
     coef=[2,1.3,1.1]

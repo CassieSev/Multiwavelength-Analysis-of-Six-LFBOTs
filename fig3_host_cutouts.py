@@ -288,7 +288,7 @@ for i, name in enumerate(names_order):
     ax.set_yticks([])
 
 plt.tight_layout(pad=0.5, h_pad=0.3, w_pad=0.3)
-plt.savefig('figures/fig7_host_cutouts.pdf',
+plt.savefig('figures/fig3_host_cutouts.pdf',
             dpi=300, bbox_inches='tight')
 plt.show()
 print("\nSaved fig3_host_cutouts.pdf")
